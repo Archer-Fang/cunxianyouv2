@@ -1,0 +1,222 @@
+<template>
+  <div class="header">
+    <div class="box2">
+      <img src="/front/img/logo.png">
+    </div>
+    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+      <a href="/front/index" id="current" class="a1">首页</a><br>
+      <a href="/front/videoDetail" class="a1">视频</a><br>
+    </div>
+    <div class="box3">
+      <a href="/front/renwen" class="a1">人文</a>
+    </div>
+    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+      <a href="/front/fengguang" class="a1">风光</a><br>
+      <a href="/front/spring" class="a1">春</a><br>
+      <a href="/front/summer" class="a1">夏</a><br>
+      <a href="/front/autumn" class="a1">秋</a><br>
+      <a href="/front/winter" class="a1">冬</a><br>
+
+    </div>
+    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+      <a href="/front/techang" class="a1">特产</a><br>
+      <a href="/front/goods" class="a1">特产陈列</a><br>
+    </div>
+    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+      <a href="/front/lvyou" class="a1">旅游</a><br>
+      <a href="/front/rentcar" class="a1">交通陈列</a><br>
+      <a href="/front/hotelList" class="a1">住宿陈列</a>
+
+    </div>
+    <div class="box3">
+      <a href="/front/wenda"  class="a1">问答</a>
+    </div>
+    <div v-if="loginJudge">
+
+      <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
+        <a href="/front/goodscollection" class="a1">个人中心</a><br>
+        <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
+        <a href="/front/housecollection" class="a1">我的商品收藏</a><br>
+
+
+      </div>
+
+      <div class="box5" style="width:150px">
+        <a href="" class="a1" style="color:#6d952f">欢迎你！{{userName}}</a>
+      </div>
+    </div>
+    <div v-else>
+      <div class="box5" style="width:150px">
+        <a href="/front/login" class="a1" style="color:#6d952f">登录</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import {mapState, mapActions} from 'vuex'
+  export default {
+  data(){
+    return{
+
+    }
+  },
+  mounted(){
+    //获取用户信息
+    /*this.getUserInfo();*/
+
+  },
+  props: ['signinUp', 'headTitle', 'goBack'],
+  computed: {
+    ...mapState([
+      'userInfo'
+    ]),
+  },
+  methods: {
+    ...mapActions([
+      'getUserInfo'
+    ]),
+  },
+
+}
+
+</script>
+<style scoped>
+  /* CSS Document */
+  body{margin:0;
+    height: 100%;
+  }
+
+  input {
+    font-family: "宋体";
+    border:1px solid #ccc ;
+    font-size:12px;
+    width:168px;
+    height:22px;
+    display:block;
+    border-radius:15px;
+    text-align:center;
+    color:#b6b6b6;
+    background-color:#e7e7e7;
+  }
+   a#current
+  {
+    color: #6d952f;
+    font-family:"宋体";
+    font-size:12px;
+  }
+   a.a1:link{
+    font-family:"宋体";
+    font-size:12px;
+    color:#666666;
+    text-decoration:none;
+  }
+
+   a.a1:visited{
+    font-family:"宋体";
+    font-size:12px;
+    color:#bdbdbd;
+    text-decoration:none;
+  }
+   a.a1:hover{
+    font-family:"宋体";
+    font-size:12px;
+    color:#6d952f;
+    cursor:pointer;
+    text-decoration:none;
+  }
+  {
+    width:100%;
+    height:60px;
+    background-color:#f9f9f9;
+    z-index:999;
+    position:fixed;
+    top:0px;
+    opacity:0.95;
+  }
+  .header{
+
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+    background-color:#f9f9f9;
+
+  }
+  .header .box2{
+    width: 100px;
+    height: 60px;
+    float: left;
+
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .header .box3{
+    width: 80px;
+    height: 60px;
+    float: left;
+    overflow-y:hidden;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color:#666666;
+  }
+  .header .box33{
+    width: 80px;
+    height: auto;
+    float: left;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color:#666666;
+    background-color:#FBFAFA;
+  }
+  .header .box4{
+    width: 210px;
+    height: 60px;
+    float: left;
+
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color:#666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .box5{
+
+    width: 50px;
+    height: 60px;
+    float: left;
+    overflow-y:hidden;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color:#666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .header .box55{
+    width: 100px;
+    height: auto;
+    float: left;
+
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color:#666666;
+    display: inline-block;
+
+    vertical-align: middle;
+    background-color:#FBFAFA;
+
+  }
+</style>
