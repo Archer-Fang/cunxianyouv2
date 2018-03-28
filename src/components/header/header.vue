@@ -1,56 +1,55 @@
 <template>
-  <div class="header">
-    <div class="box2">
-      <img src="/front/img/logo.png">
-    </div>
-    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-      <a href="/front/index" id="current" class="a1">首页</a><br>
-      <a href="/front/videoDetail" class="a1">视频</a><br>
-    </div>
-    <div class="box3">
-      <a href="/front/renwen" class="a1">人文</a>
-    </div>
-    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-      <a href="/front/fengguang" class="a1">风光</a><br>
-      <a href="/front/spring" class="a1">春</a><br>
-      <a href="/front/summer" class="a1">夏</a><br>
-      <a href="/front/autumn" class="a1">秋</a><br>
-      <a href="/front/winter" class="a1">冬</a><br>
+  <header class="wrap">
+    <section class="header">
+      <section class="box2">
+        <img src="/front/img/logo.png">
+      </section>
+      <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+        <a href="/front/index" id="current" class="a1">首页</a><br>
+        <a href="/front/videoDetail" class="a1">视频</a><br>
+      </section>
+      <section class="box3">
+        <a href="/front/renwen" class="a1">人文</a>
+      </section>
+      <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+        <a href="/front/fengguang" class="a1">风光</a><br>
+        <a href="/front/spring" class="a1">春</a><br>
+        <a href="/front/summer" class="a1">夏</a><br>
+        <a href="/front/autumn" class="a1">秋</a><br>
+        <a href="/front/winter" class="a1">冬</a><br>
 
-    </div>
-    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-      <a href="/front/techang" class="a1">特产</a><br>
-      <a href="/front/goods" class="a1">特产陈列</a><br>
-    </div>
-    <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-      <a href="/front/lvyou" class="a1">旅游</a><br>
-      <a href="/front/rentcar" class="a1">交通陈列</a><br>
-      <a href="/front/hotelList" class="a1">住宿陈列</a>
+      </section>
+      <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+        <a href="/front/techang" class="a1">特产</a><br>
+        <a href="/front/goods" class="a1">特产陈列</a><br>
+      </section>
+      <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+        <a href="/front/lvyou" class="a1">旅游</a><br>
+        <a href="/front/rentcar" class="a1">交通陈列</a><br>
+        <a href="/front/hotelList" class="a1">住宿陈列</a>
 
-    </div>
-    <div class="box3">
-      <a href="/front/wenda"  class="a1">问答</a>
-    </div>
-    <div v-if="loginJudge">
+      </section>
+      <section class="box3">
+        <a href="/front/wenda"  class="a1">问答</a>
+      </section>
+      <section v-if="loginJudge">
+        <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
+          <a href="/front/goodscollection" class="a1">个人中心</a><br>
+          <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
+          <a href="/front/housecollection" class="a1">我的商品收藏</a><br>
+        </section>
+        <section class="box5" style="width:150px">
+          <a href="" class="a1" style="color:#6d952f">欢迎你！{{userName}}</a>
+        </section>
+      </section>
+      <section v-else>
+        <section class="box5" style="width:150px">
+          <a href="/front/login" class="a1" style="color:#6d952f">登录</a>
+        </section>
+      </section>
+    </section>
+  </header>
 
-      <div class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
-        <a href="/front/goodscollection" class="a1">个人中心</a><br>
-        <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
-        <a href="/front/housecollection" class="a1">我的商品收藏</a><br>
-
-
-      </div>
-
-      <div class="box5" style="width:150px">
-        <a href="" class="a1" style="color:#6d952f">欢迎你！{{userName}}</a>
-      </div>
-    </div>
-    <div v-else>
-      <div class="box5" style="width:150px">
-        <a href="/front/login" class="a1" style="color:#6d952f">登录</a>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -66,10 +65,10 @@ import {mapState, mapActions} from 'vuex'
     /*this.getUserInfo();*/
 
   },
-  props: ['signinUp', 'headTitle', 'goBack'],
+  props: ['loginJudge'],
   computed: {
     ...mapState([
-      'userInfo'
+    /*  'userInfo'*/
     ]),
   },
   methods: {
@@ -83,7 +82,8 @@ import {mapState, mapActions} from 'vuex'
 </script>
 <style scoped>
   /* CSS Document */
-  body{margin:0;
+  body{
+    margin:0;
     height: 100%;
   }
 
@@ -126,6 +126,15 @@ import {mapState, mapActions} from 'vuex'
     text-decoration:none;
   }
   {
+    width:100%;
+    height:60px;
+    background-color:#f9f9f9;
+    z-index:999;
+    position:fixed;
+    top:0px;
+    opacity:0.95;
+  }
+  .wrap{
     width:100%;
     height:60px;
     background-color:#f9f9f9;
