@@ -11,6 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+      /*          target: 'https://news-at.zhihu.com/api/4',*/
+
       '/api': {
         target: 'http://cangdu.org:8001',
         changeOrigin: true,

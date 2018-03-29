@@ -8,14 +8,9 @@
           <section id="pic1"><img src="/front/img/logo.png"></section>
           <section id="welcome">欢迎来到村先游</section>
           <section id="test" >
-            <div class="theme-list ml2 mr2 mb2">
-              <div v-for="item in DONE_THEMES_LIST.stories">
-                <router-link :to="{name: 'news-detail', params: {id: item.id}}" style="color: black">
-                  <ThemeLink v-if="item.type == 0" :title="item.title"></ThemeLink>
-                </router-link>
+            <!--<div v-show="DONE_NEWS_LATEST.top_stories">
 
-              </div>
-            </div>
+            </div>-->
           </section>
           <section id="meili">美丽乡村,第一步</section>
           <section id="account"><input type="text" name="account" id="telephone"placeholder="手机号" v-model="phoneNumber"></section>
@@ -30,8 +25,8 @@
           <section id="captchaCode">
             <input type="text" placeholder="验证码" maxlength="4" v-model="codeNumber">
             <div class="img_change_img">
-              <img v-show="captchaCodeImg" :src="captchaCodeImg">
-              <div class="change_img" @click="getCaptchaCode">
+              <img v-show="DONE_CAPTCHA.status" :src="DONE_CAPTCHA.code">
+              <div class="change_img" ><!--@click="getCaptchaCode"-->
                 <p>看不清</p>
                 <p>换一张</p>
               </div>
@@ -53,7 +48,7 @@
   import header from "@/components/header/header"
   import getData from '@/service/getData'
   import {
-    mapGetters
+    mapGetters,mapActions,mapMutations
   } from 'vuex'
   export default {
     data(){
@@ -71,9 +66,7 @@
 
       }
     },
-    create(){
-      this.$store.dispatch('FETCH_THEMES_list')
-    },
+
     components:{
       "v-header":header,
     },
@@ -82,10 +75,21 @@
       rightPhoneNumber: function (){
         return /^1\d{10}$/gi.test(this.phoneNumber)
       },
+      ...mapActions([
+        'FETCH_CAPTCHA'
+      ]),
       ...mapGetters([
-        'DONE_THEMES_LIST'
+        'DONE_CAPTCHA'
       ]),
 
+
+
+    },
+    beforeCreate: function() {
+      document.getElementsByTagName("body")[0].className = "bodyAttr";
+    },
+    create(){
+      this.$store.dispatch('FETCH_CAPTCHA')
     },
     methods:{
 
@@ -94,16 +98,14 @@
         this.showPassword = !this.showPassword;
         console.log(1);
       },
-       getCaptchaCode(){
+       /*getCaptchaCode(){
         console.log("success1");
 
         this.captchaCodeImg=0;
         console.log("success2");
-      }
+      }*/
     },
-    beforeCreate: function() {
-      document.getElementsByTagName("body")[0].className = "bodyAttr";
-    },
+
     beforeDestroy: function() {
       document.body.removeAttribute("class","bodyAttr");
     }
