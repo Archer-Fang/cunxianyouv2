@@ -32,7 +32,7 @@
       <section class="box3">
         <a href="/front/wenda"  class="a1">问答</a>
       </section>
-      <section v-if="loginJudge">
+      <section v-if="Login">
         <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
           <a href="/front/goodscollection" class="a1">个人中心</a><br>
           <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
@@ -61,15 +61,15 @@ import {mapState, mapActions} from 'vuex'
     }
   },
   mounted(){
-    //获取用户信息
-    /*this.getUserInfo();*/
+
 
   },
-  props: ['loginJudge'],
+  props: [''],
   computed: {
-    ...mapState([
-    /*  'userInfo'*/
-    ]),
+
+    ...mapState({//this.$store.state.data.Login
+      Login: state => state.data.Login,
+    })
   },
   methods: {
     ...mapActions([

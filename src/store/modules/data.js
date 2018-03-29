@@ -3,50 +3,56 @@ import axios from 'axios'
 const urlBase = '/api/';
 const state={
   Captcha:{},
-  NewsLatest: {}
+  UserInfo:{},
+  Login:false
 }
 const getters={
   [types.DONE_CAPTCHA]: state => {
     return state.Captcha
   },
-  [types.DONE_NEWS_LATEST]: state => {
-    return state.NewsLatest
+  [types.DONE_USERINFO](state, all) {
+    return state.UserInfo
   },
+
 
 }
 const mutations={
   [types.TOGGLE_CAPTCHA](state, all) {
-    console.log("all:"+all);
     state.Captcha=all;
   },
-  [types.TOGGLE_NEWS_LATEST](state, all) {
-    console.log("all:"+all);
-    state.NewsLatest = all
-    // state.LoadingTwo = false
+  [types.TOGGLE_USERINFO](state, info) {
+    state.UserInfo = info;
+    state.Login = true;
+    console.log("login success and TOGGLE_USERINFO");
+/*
+    setStore('user_id', info.user_id);
+*/
   },
+
 }
 const actions={
   [types.FETCH_CAPTCHA]({commit}) {
-
-/*
-    axios.post(urlBase+'v1/captchas',{})
-*/
-/*
-    axios.post('http://cangdu.org:8001/v1/captchas',{})
-*/
     axios.post(urlBase+'v1/captchas',{})
       .then(res => {
-        console.log("res:"+res.data.status);
         commit(types.TOGGLE_CAPTCHA, res.data);
       }).catch(err => console.log(err))
   },
-  [types.FECTH_NEWS_LATEST]({commit}) {
-    axios.get(urlBase + 'news/latest')
+/*
+  [types.FETCH_USERINFO]({commit},{username,password,captcha_code}) {
+/!*  username,password,captcha_code
+    console.log("username,password,captcha_code:"+username+","+password+","+captcha_code)
+*!/
+/!*
+    console.log("password:"+password);
+*!/
+    axios.post(urlBase+'/v2/login',{username,password,captcha_code})
       .then(res => {
-        console.log("res:"+res.data.date);
-        commit(types.TOGGLE_NEWS_LATEST, res.data);
-      }).catch(err => console.log(err))
+        console.log("FETCH_USERINFO-res:"+res.data);
+        commit(types.TOGGLE_USERINFO, res.data);
+      })
+      .catch(err => console.log(err))
   },
+*/
 }
 export default {
   state,
