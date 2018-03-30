@@ -6,10 +6,14 @@
         <section id="left">
           <section id="pic1"><img src="/front/img/logo.png"></section>
           <section id="welcome">欢迎来到村先游</section>
+
           <section id="test" >
             <!--<div v-show="DONE_NEWS_LATEST.top_stories">
 
             </div>-->
+           <!-- <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+            </button>-->
           </section>
           <section id="meili">美丽乡村,第一步</section>
           <section id="account"><input type="text" name="account" id="telephone"placeholder="手机号" v-model="phoneNumber"></section>
@@ -31,6 +35,9 @@
           <section id="register"><a href="register">注册</a></section>
           <section id="p">登录<h4 style="color:#737373">账号</h4>，一切的<h4 style="color:#737373">美好</h4>不用远离</section>
         </section>
+<!--
+        <button type="button" class="btn btn-primary">（首选项）Primary</button>
+-->
 
         <section id="right"><img src="@/assets/images/809.jpg"></section>
 
@@ -38,6 +45,8 @@
 
       </section>
     </section>
+    <!--<v-footer >
+    </v-footer>-->
   </div>
 
 </template>
@@ -47,6 +56,15 @@
   import getData from '@/service/getData'
   import alertTip from '@/components/common/alertTip'
   import axios from 'axios'
+
+  import footer from "@/components/footer/footer"
+
+
+  /*
+    引入bootstap
+  */
+  import 'bootstrap/dist/css/bootstrap.min.css'
+  import 'bootstrap/dist/js/bootstrap.min.js'
 
   import {
     mapGetters,mapActions,mapMutations
@@ -76,6 +94,7 @@
 
     components:{
       "v-header":header,
+      "v-footer":footer,
       "alert-tip":alertTip,
     },
     computed: {

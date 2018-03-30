@@ -4,15 +4,17 @@
   <!--<v-header >
   </v-header>-->
     <!-- `greet` 是在下面定义的方法名 -->
-    <button @click="greet" style="margin-top:200px;">Greet</button>
+
+    <button @click="greet" style="margin-top:200px;">Greet1</button>
+    <v-footer >
+    </v-footer>
   </div>
 
 </template>
 
 <script>
-/*
-  import header from "@/components/header/header"
-*/
+
+  import footer from "@/components/footer/footer"
 
   export default {
     data(){
@@ -26,9 +28,7 @@
 
     },
     components:{
-/*
-      "v-header":header,
-*/
+      "v-footer":footer,
     },
     computed: {
 
