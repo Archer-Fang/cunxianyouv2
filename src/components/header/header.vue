@@ -5,11 +5,13 @@
         <img src="/front/img/logo.png">
       </section>
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-        <a href="/front/index" id="current" class="a1">首页</a><br>
-        <a href="/front/videoDetail" class="a1">视频</a><br>
+        <router-link :to="{name:'test'}" class="a1" >首页</router-link>
+<!--
+        <router-link  class="a1" >视频</router-link>&lt;!&ndash;:to="{name:'login'}"&ndash;&gt;
+-->
       </section>
       <section class="box3">
-        <a href="/front/renwen" class="a1">人文</a>
+        <router-link :to="{name:'login'}" class="a1" >人文</router-link>
       </section>
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
         <a href="/front/fengguang" class="a1">风光</a><br>
@@ -32,6 +34,7 @@
       <section class="box3">
         <a href="/front/wenda"  class="a1">问答</a>
       </section>
+
       <section v-if="Login">
         <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
           <a href="/front/goodscollection" class="a1">个人中心</a><br>
@@ -39,12 +42,16 @@
           <a href="/front/housecollection" class="a1">我的商品收藏</a><br>
         </section>
         <section class="box5" style="width:150px">
-          <a href="" class="a1" style="color:#6d952f">欢迎你！{{userName}}</a>
+          <div  style="color:#6d952f">欢迎你！{{Login}}</div>
+
+        </section>
+        <section class="box5" style="width:150px">
+          <router-link :to="{name:'login'}" class="a1" @click.native="loginOut">退出登录</router-link><!--@click="loginOut"-->
         </section>
       </section>
       <section v-else>
         <section class="box5" style="width:150px">
-          <a href="/front/login" class="a1" style="color:#6d952f">登录</a>
+          <router-link :to="{name:'login'}" class="a1" style="color:#6d952f">登录</router-link>
         </section>
       </section>
     </section>
@@ -72,9 +79,14 @@ import {mapState, mapActions} from 'vuex'
     })
   },
   methods: {
-    ...mapActions([
-      'getUserInfo'
-    ]),
+    closeTip(){
+      this.$emit('closeTip')
+    },
+    loginOut(){
+      this.$emit('loginOut')
+
+    }
+
   },
 
 }
@@ -99,41 +111,34 @@ import {mapState, mapActions} from 'vuex'
     color:#b6b6b6;
     background-color:#e7e7e7;
   }
-   a#current
+   /*#current*/
+  .router-link-active
   {
     color: #6d952f;
     font-family:"宋体";
     font-size:12px;
   }
-   a.a1:link{
+   .a1:link{
     font-family:"宋体";
     font-size:12px;
     color:#666666;
     text-decoration:none;
   }
 
-   a.a1:visited{
+/*   .a1:visited{
     font-family:"宋体";
     font-size:12px;
-    color:#bdbdbd;
+    color:#666666;
     text-decoration:none;
-  }
-   a.a1:hover{
+  }*/
+   .a1:hover{
     font-family:"宋体";
     font-size:12px;
     color:#6d952f;
     cursor:pointer;
     text-decoration:none;
   }
-  {
-    width:100%;
-    height:60px;
-    background-color:#f9f9f9;
-    z-index:999;
-    position:fixed;
-    top:0px;
-    opacity:0.95;
-  }
+
   .wrap{
     width:100%;
     height:60px;

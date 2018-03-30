@@ -1,12 +1,34 @@
 <template>
   <div id="app">
+    <v-header @loginOut="loginOut" >
+    </v-header>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
+  import header from "@/components/header/header";
+  import {
+    mapGetters,mapActions,mapMutations
+  } from 'vuex'
+  export default {
+  name: 'App',
+  components:{
+    "v-header":header,
+  },
+  methods: {
+    ...mapMutations([
+      'TOGGLE_USERINFO'
+    ]),
+    closeTip(){
+      console.log("1");
+    },
+    loginOut(){
+      this.TOGGLE_USERINFO(this.userInfo);
+      console.log("Login state:"+this.$store.state.data.Login);
+      this.$router.push('/');
+    }
+  }
 }
 </script>
 

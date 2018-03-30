@@ -1,5 +1,7 @@
 import * as types from '../types'
 import axios from 'axios'
+import {setStore, getStore,removeStore} from '@/config/mUtils'
+
 const urlBase = '/api/';
 const state={
   Captcha:{},
@@ -22,8 +24,17 @@ const mutations={
   },
   [types.TOGGLE_USERINFO](state, info) {
     state.UserInfo = info;
-    state.Login = true;
-    console.log("login success and TOGGLE_USERINFO");
+    state.Login = !state.Login;
+    if(state.Login){
+      setStore('user_id',info.user_id);
+      console.log("login success and TOGGLE_USERINFO");
+    }
+    else{
+      removeStore('user_id');
+      console.log("loginOut success and TOGGLE_USERINFO");
+
+    }
+
 /*
     setStore('user_id', info.user_id);
 */

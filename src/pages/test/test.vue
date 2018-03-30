@@ -1,8 +1,8 @@
 <template>
   <div id="example-2">
 
-  <v-header >
-  </v-header>
+  <!--<v-header >
+  </v-header>-->
     <!-- `greet` 是在下面定义的方法名 -->
     <button @click="greet" style="margin-top:200px;">Greet</button>
   </div>
@@ -10,7 +10,9 @@
 </template>
 
 <script>
+/*
   import header from "@/components/header/header"
+*/
 
   export default {
     data(){
@@ -24,7 +26,9 @@
 
     },
     components:{
+/*
       "v-header":header,
+*/
     },
     computed: {
 

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <v-header >
-    </v-header>
+
     <section id="wrap">
       <section id="content">
         <section id="left">
@@ -143,6 +142,7 @@
         }else{
           this.TOGGLE_USERINFO(this.userInfo);
           console.log("Login state:"+this.$store.state.data.Login);
+          this.$router.push('/');
 
         }
 
