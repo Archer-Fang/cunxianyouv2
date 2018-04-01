@@ -7,5 +7,6 @@ export const TOGGLE_USERINFO='TOGGLE_USERINFO';
 //  getters types
 export const DONE_CAPTCHA='DONE_CAPTCHA';
 export const DONE_USERINFO='DONE_USERINFO';
+export const DONE_PICSHOW='DONE_PICSHOW';
 
 

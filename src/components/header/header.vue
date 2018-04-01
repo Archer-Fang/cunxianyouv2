@@ -2,12 +2,12 @@
   <header class="wrap">
     <section class="header">
       <section class="box2">
-        <img src="/front/img/logo.png">
+        <img src="/static/images/logo.png">
 
       </section>
 
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-        <router-link to="/test" class="a2">首页</router-link><br/>
+        <router-link to="/" class="a2">首页</router-link><br/>
 <!--
         <router-link  :to="{name:'test'}" class="a2" >视频</router-link>&lt;!&ndash;:to="{name:'login'}"&ndash;&gt;
 -->

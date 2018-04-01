@@ -4,7 +4,7 @@
     <section id="wrap">
       <section id="content">
         <section id="left">
-          <section id="pic1"><img src="/front/img/logo.png"></section>
+          <section id="pic1"><!--<img src="./static/images/logo.png">--></section>
           <section id="welcome">欢迎来到村先游</section>
 
           <section id="test" >
@@ -39,7 +39,7 @@
         <button type="button" class="btn btn-primary">（首选项）Primary</button>
 -->
 
-        <section id="right"><img src="@/assets/images/809.jpg"></section>
+        <section id="right"><img src="/static/images/809.jpg"></section>
 
         <alert-tip v-if="showAlert" :showHide="showAlert" @closeTip="closeTip" :alertText="alertText"></alert-tip>
 

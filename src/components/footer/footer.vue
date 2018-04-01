@@ -1,14 +1,10 @@
 <template>
-  <div>
-  <section> <button type="button" class="btn btn-primary">（首选项）Primary</button></section>
+  <div class="footer">
+    Copyright © 2017 村先游 All Rights Reserved
   </div>
 </template>
 <script>
-  /*
-  引入bootstap
-*/
-  import 'bootstrap/dist/css/bootstrap.min.css'
-  import 'bootstrap/dist/js/bootstrap.min.js'
+
   export default {
     data(){
       return{
@@ -31,3 +27,16 @@
 
   }
 </script>
+<style scoped>
+ .footer {
+    margin-top: 49px;
+    padding-top: 17px;
+    width: 984px;
+    height: 31px;
+    border-top: thin solid #F3F4F8;
+    text-align: center;
+    font-size: 14px;
+    color: #eaeaea;
+    margin-left: -12px;
+  }
+</style>

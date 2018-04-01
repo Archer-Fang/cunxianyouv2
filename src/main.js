@@ -6,6 +6,14 @@ import router from './router'
 import store from './store/store'
 import jquery from 'jquery'
 
+/*
+  引入bootstap
+*/
+require('bootstrap-loader');
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue);
+
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

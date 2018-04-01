@@ -6,7 +6,8 @@ const urlBase = '/api/';
 const state={
   Captcha:{},
   UserInfo:{},
-  Login:false
+  Login:false,
+  PicShow:true,
 }
 const getters={
   [types.DONE_CAPTCHA]: state => {
@@ -14,6 +15,9 @@ const getters={
   },
   [types.DONE_USERINFO](state, all) {
     return state.UserInfo
+  },
+  [types.DONE_PICSHOW](state, all) {
+    return state.PicShow
   },
 
 
