@@ -13,12 +13,19 @@ module.exports = {
     proxyTable: {
       /*          target: 'https://news-at.zhihu.com/api/4',*/
 
-      '/api': {
+      '/api2': {
         target: 'http://cangdu.org:8001',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/'
+          '^/api2': '/'
         }
+      },
+        '/api': {
+          target: 'https://news-at.zhihu.com/api/4',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/api': '/'
+          }
       }
     },
 

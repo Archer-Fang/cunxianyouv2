@@ -7,7 +7,7 @@
       </section>
 
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-        <router-link to="/" class="a2">首页</router-link><br/>
+        <router-link to="/index" class="a2">首页</router-link><br/>
 <!--
         <router-link  :to="{name:'test'}" class="a2" >视频</router-link>&lt;!&ndash;:to="{name:'login'}"&ndash;&gt;
 -->
@@ -16,6 +16,8 @@
 <!--
         <router-link  :to="{name:'test'}" class="a2" >人文</router-link>&lt;!&ndash;:to="{name:'login'}"&ndash;&gt;
 -->
+        <router-link to="/renwen" class="a2">人文</router-link><br/>
+
       </section>
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
        <!-- <a href="/front/fengguang" class="a1">风光</a><br>

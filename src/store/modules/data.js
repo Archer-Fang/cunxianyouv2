@@ -3,11 +3,17 @@ import axios from 'axios'
 import {setStore, getStore,removeStore} from '@/config/mUtils'
 
 const urlBase = '/api/';
+const urlBase2 = '/api2/';
+
 const state={
   Captcha:{},
   UserInfo:{},
   Login:false,
   PicShow:true,
+  NewsLatest: {},
+  LoadingTwo:true,
+  NewsListRoot:[]
+
 }
 const getters={
   [types.DONE_CAPTCHA]: state => {
@@ -19,6 +25,12 @@ const getters={
   [types.DONE_PICSHOW](state, all) {
     return state.PicShow
   },
+  [types.DONE_NEWS_LATEST]: state => {
+    return state.NewsLatest
+  },
+  [types.DONE_LOADING_TWO](state){
+    return state.DONE_LOADING_TWO
+  }
 
 
 }
@@ -39,15 +51,31 @@ const mutations={
 
     }
 
+
 /*
     setStore('user_id', info.user_id);
 */
   },
-
+  [types.TOGGLE_NEWS_LATEST](state, all) {
+    state.NewsListRoot.push(all)
+    state.NewsLatest = all
+    // state.LoadingTwo = false
+  },
+  [types.TOGGLE_NEWS_LATEST_MORE](state, all) {
+  state.NewsListRoot.push(all)
+  state.time.subtract(1, "days")
+  state.LoadingOne = false
+  },
+  showLoding(state) {
+    state.LoadingTwo = true;
+  },
+  hideLoading(state) {
+    state.LoadingTwo = false;
+  }
 }
 const actions={
   [types.FETCH_CAPTCHA]({commit}) {
-    axios.post(urlBase+'v1/captchas',{})
+    axios.post(urlBase2+'v1/captchas',{})
       .then(res => {
         commit(types.TOGGLE_CAPTCHA, res.data);
       }).catch(err => console.log(err))
@@ -68,6 +96,25 @@ const actions={
       .catch(err => console.log(err))
   },
 */
+  [types.FECTH_NEWS_LATEST]({commit}) {
+    state.LoadingTwo = true//https://news-at.zhihu.com/api/4/news/latest
+    commit('showLoding');// urlBase2+v1/cities?type=hot
+    axios.get(urlBase+'news/latest')
+      .then(res => {
+        commit(types.TOGGLE_NEWS_LATEST, res.data);
+        commit('hideLoading');
+        console.log("fetch new latest success");
+      }).catch(err => console.log(err))
+  },
+  [types.FECTH_NEWS_LATEST_MORE]({commit}) {
+    state.LoadingOne = true
+    var now = state.time.format("YYYYMMDD")
+    console.log(now)
+    axios.get(urlBase + 'news/before/' + now)
+      .then(res => {
+        commit(types.TOGGLE_NEWS_LATEST_MORE, res.data)
+      }).catch(err => console.log(err))
+  },
 }
 export default {
   state,

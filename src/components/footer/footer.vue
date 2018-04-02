@@ -1,7 +1,10 @@
 <template>
-  <div class="footer">
-    Copyright © 2017 村先游 All Rights Reserved
+  <div class="wrap">
+    <section class="footer">
+      Copyright © 2017 村先游 All Rights Reserved
+    </section>
   </div>
+
 </template>
 <script>
 
@@ -28,6 +31,10 @@
   }
 </script>
 <style scoped>
+  .wrap{
+    margin: 0 auto;
+    width:1000px;
+  }
  .footer {
     margin-top: 49px;
     padding-top: 17px;

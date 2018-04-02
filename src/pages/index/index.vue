@@ -107,13 +107,11 @@
             </div>
           </div>
         </div>
-        <div class="footer" style="    margin-left: -12px;">
-          Copyright  2017 村先游 All Rights Reserved
-        </div>
+        <v-footer >
+        </v-footer>
       </div>
     </div>
-    <v-footer >
-    </v-footer>
+
   </div>
 
 </template>
@@ -137,7 +135,7 @@
         picShow:true,
       }
     },
-    create(){
+    created(){
 
     },
     components:{

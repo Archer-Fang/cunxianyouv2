@@ -15,7 +15,14 @@ Vue.use(BootstrapVue);
 
 
 Vue.config.productionTip = false
-
+Vue.filter("formatDate", function (value) {
+  var middleState = value.split("");
+  middleState.splice(4,0,"年");
+  middleState.splice(7,0,"月")
+  middleState.splice(middleState.length,0,"日")
+  var middleState2 = middleState.toString().replace(/,/g,'')
+  return middleState2
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

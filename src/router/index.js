@@ -5,6 +5,8 @@ import login from '@/pages/login/login'
 import test from '@/pages/test/test'
 import store from '@/store/store'
 import index from '@/pages/index/index'
+import renwen from '@/pages/renwen/renwen'
+
 
 
 
@@ -13,12 +15,22 @@ Vue.use(Router)
 const router= new Router({
   routes: [
     {
-      path: '/',
+      path:'',
+      redirect:'/index'
+    },
+    {
+      path: '/index',
       name: 'index',
-      meta: {
+      //身份验证
+     /* meta: {
         requireAuth: true,  // 添加该字段，表示进入这个路由是需要登录的
-      },
+      },*/
       component: index,
+    },
+    {
+      path: '/renwen',
+      name: 'renwen',
+      component: renwen,
     },
     {
       path: '/login',

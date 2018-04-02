@@ -9,7 +9,7 @@
            <img src="{{banner_img}}" onmouseover="this.src='{{banner_img_over}}' "
                 onmouseout="this.src='{{banner_img}}'" style="width:214px;height:130px">
          </a>-->
-         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px" v-show="picShow">
+         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px"  >
 
        </div>
        <div class="box1"  >
@@ -17,7 +17,7 @@
            <img src="{{banner_img}}" onmouseover="this.src='{{banner_img_over}}' "
                 onmouseout="this.src='{{banner_img}}'" style="width:214px;height:130px">
          </a>-->
-         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px" v-show="picShow">
+         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px"  >
 
        </div>
        <div class="box1"  >
@@ -25,7 +25,7 @@
            <img src="{{banner_img}}" onmouseover="this.src='{{banner_img_over}}' "
                 onmouseout="this.src='{{banner_img}}'" style="width:214px;height:130px">
          </a>-->
-         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px" v-show="picShow">
+         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px"  >
 
        </div>
        <div class="box1"  >
@@ -33,7 +33,7 @@
            <img src="{{banner_img}}" onmouseover="this.src='{{banner_img_over}}' "
                 onmouseout="this.src='{{banner_img}}'" style="width:214px;height:130px">
          </a>-->
-         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px" v-show="picShow">
+         <img src= '/static/images/1.png' onmouseover="this.src='/static/images/3.png'" onmouseout="this.src='/static/images/1.png'" style="width:214px;height:130px"  >
 
        </div>
 
