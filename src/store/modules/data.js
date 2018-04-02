@@ -1,5 +1,7 @@
 import * as types from '../types'
 import axios from 'axios'
+var moment = require('moment');
+
 import {setStore, getStore,removeStore} from '@/config/mUtils'
 
 const urlBase = '/api/';
@@ -12,7 +14,10 @@ const state={
   PicShow:true,
   NewsLatest: {},
   LoadingTwo:true,
-  NewsListRoot:[]
+  LoadingOne:false,
+  NewsListRoot:[],
+  time: moment(),
+
 
 }
 const getters={
@@ -30,7 +35,13 @@ const getters={
   },
   [types.DONE_LOADING_TWO](state){
     return state.DONE_LOADING_TWO
-  }
+  },
+  [types.DONE_LOADING_ONE]: state => {
+    return state.LoadingOne
+  },
+  [types.DONE_NEWS_LIST_ROOT]: state => {
+    return state.NewsListRoot
+  },
 
 
 }
@@ -113,6 +124,8 @@ const actions={
     axios.get(urlBase + 'news/before/' + now)
       .then(res => {
         commit(types.TOGGLE_NEWS_LATEST_MORE, res.data)
+        console.log("fetch new latest more success");
+        state.LoadingOne=false;
       }).catch(err => console.log(err))
   },
 }

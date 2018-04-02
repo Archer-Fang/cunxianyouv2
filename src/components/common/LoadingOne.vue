@@ -1,6 +1,6 @@
 <template>
 <div class="loading-one center">
-	<img src="/static/logo.png" height="50" class="inline-block double-flash" alt="">
+	<img src="/static/images/logo.png" height="50" class="inline-block double-flash" alt="">
 	<p class="h6">正在加载...</p>
 </div>
 </template>

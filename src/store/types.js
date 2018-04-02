@@ -18,4 +18,8 @@ export const DONE_USERINFO='DONE_USERINFO';
 export const DONE_PICSHOW='DONE_PICSHOW';
 export const DONE_NEWS_LATEST = 'DONE_NEWS_LATEST'                  // 最新消息列表
 export const DONE_LOADING_TWO='DONE_LOADING_TWO'
+export const DONE_LOADING_ONE='DONE_LOADING_ONE'
+export const DONE_NEWS_LIST_ROOT = 'DONE_NEWS_LIST_ROOT'            // 最新消息列表梗
+
+
 

@@ -1,6 +1,6 @@
 <template>
   <div class="loading-two">
-    <img src="/static/logo.png" class="double-flash" alt="">
+    <img src="/static/images/logo.png" class="double-flash" alt="">
     <p class="h6">正在加载...</p>
   </div>
 </template>
