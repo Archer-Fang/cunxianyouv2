@@ -6,7 +6,11 @@ import {setStore, getStore,removeStore} from '@/config/mUtils'
 
 const urlBase = '/api/';
 const urlBase2 = '/api2/';
-
+//解决知乎图片访问限制问题
+/*var instance = axios.create({
+  baseURL: urlBase,
+  timeout: 1000,
+});*/
 const state={
   Captcha:{},
   UserInfo:{},
@@ -85,6 +89,7 @@ const mutations={
   }
 }
 const actions={
+
   [types.FETCH_CAPTCHA]({commit}) {
     axios.post(urlBase2+'v1/captchas',{})
       .then(res => {
@@ -116,6 +121,15 @@ const actions={
         commit('hideLoading');
         console.log("fetch new latest success");
       }).catch(err => console.log(err))
+   /* instance.get('news/latest')
+      .then(res => {
+        commit(types.TOGGLE_NEWS_LATEST, res.data);
+        commit('hideLoading');
+        console.log("fetch new latest success");
+        console.log("instance headers:"+instance.headers);
+        console.log("instance baseUrl:"+instance.baseURL);
+
+      }).catch(err => console.log(err))*/
   },
   [types.FECTH_NEWS_LATEST_MORE]({commit}) {
     state.LoadingOne = true

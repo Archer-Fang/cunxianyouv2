@@ -3,6 +3,9 @@
     <v-carousel></v-carousel>
     <v-small-banner ></v-small-banner>
 <!--
+    api:https://news-at.zhihu.com/api/4/news/before/20180402
+-->
+<!--
     <RenwenList :NewsList="DONE_NEWS_LIST_ROOT"></RenwenList>
 -->
     <LoadingTwo v-show="DONE_LOADING_TWO"></LoadingTwo>
@@ -140,6 +143,7 @@
         window.scrollTo(0,670)
         this.ZhihuHeadFixClass= 'ZhihuHeadFixClass-none'
       },
+
 
 
     }
