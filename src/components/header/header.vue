@@ -38,6 +38,8 @@
         <a href="/front/rentcar" class="a1">交通陈列</a><br>
         <a href="/front/hotelList" class="a1">住宿陈列</a>
 -->
+        <router-link to="/lvyou" class="a2">旅游</router-link><br/>
+
       </section>
       <section class="box3">
        <!-- <a href="/front/wenda"  class="a1">问答</a>-->

@@ -1,97 +1,33 @@
 <template>
   <div >
     <v-carousel></v-carousel>
-
-    <div id="rexiao" style="height:auto;background-size: 1000px 827px;background: url(/static/images/img1111.png) no-repeat center;">
-      <div class="title">
-        <div class="container1">
-          <div class="box1"><img src="/static/images/小黄条.png"></div>
-          <div class="box2">这里 热销无比</div>
-          <div class="box3"><img src="/static/images/小黄条.png"></div>
-        </div>
+    <v-title :judge="judge"></v-title>
+<!--
+    <div >judge:{{judge}}</div>
+-->
+<!--
+    judge为true
+-->
+    <div v-if="judge">
+      <v-hotel-rank></v-hotel-rank>
+      <div id="chakanreping">
+      <v-rural-town></v-rural-town>
+      <v-hot-comment></v-hot-comment>
       </div>
-      <div class="subtitle txtwav flip">本周热销榜</div>
-      <div class="content">
-        <!--{{#each dataList}}
-        <div class="card1" style="box-shadow: 0 0 15px 2px #F5F5F5;">
-          <div class="honglan">
-          </div>
-          <div class="shangpinming">
-            {{hotel_name}}
-          </div>
-          <div  >
-            <div class="swiper-container" style=" padding:0 0 0 20px;height:195px;    width: 90%;">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
-              </div>
-              &lt;!&ndash; 如果需要分页器 &ndash;&gt;
-              <div class="swiper-pagination" style="    "></div>
-              &lt;!&ndash; 如果需要滚动条 &ndash;&gt;
-            </div>
-          </div>
-          <div class="jiage">
-            &yen999.9
-          </div>
-        </div>
-        {{/each}}-->
-        <v-carouseSmall></v-carouseSmall>
+<!--#
+      活动
+-->
+      <v-activity></v-activity>
+<!--
+      热门地区
+-->
+      <v-hot-region></v-hot-region>
+    </div>
 
-      </div>
-
-      <div class="lookformore" style="padding-left: 20px;">
-        <a href="/front/goods"><img src="/static/images/浏览更多按钮.png" style="     margin-top: 0px; "></a>
-      </div>
-
-      <div id="wulong"><a href="/front/goodsDetail?goodsDetailId=18"><img src="/static/images/wulong.png" width="1000px"/></a></div>
-
-
-      <div id="gushi">
-        <div class="wrap">
-          <div class="title1">优秀的产品，不乏背后的故事</div>
-          <div class="subtitle txtwav flip">慢一步，深一步</div>
-          <div class="cards">
-            <div class="card1">
-              <img src="/static/images/IMG_2209.png" width="315px" height="210px">
-            </div>
-            <div class="card2">
-              <div class="biaoti">
-                小罐茶
-              </div>
-              <div class="fubiaoti">你从未有过的茶体验</div>
-              <div class="neirong">
-                &nbsp小罐茶坚持核心产区原料，严格遵照传统制茶工艺悉<br>心制作。一罐一泡，重新定义了茶的消费体验。
-              </div>
-              <div class="anniu">
-                <a href="/front/goodsDetail?goodsDetailId=18"><img src="/static/images/点击按钮.png"></a>
-              </div>
-            </div>
-            <div class="card3">
-              <div class="biaoti">
-                武夷大红袍
-              </div>
-              <div class="fubiaoti">
-                精良的工艺，早就完美的产品
-              </div>
-              <div class="neirong">
-                <font size="1">
-                  小罐茶·武夷大红袍严格按照武夷岩茶传统制茶技艺初<br>制之后,再采用王顺明先生专有的制作工艺，以荔枝木炭<br>火反复烘焙制作而成。
-                  什么时候用高火、什么时候用<br>中火。每一口都来之不易。冲泡后汤色橙黄明亮，<br>香气馥郁，滋味醇厚，不负美誉。
-                </font>
-              </div>
-              <div class="anniu">
-                <a href="/front/goodsDetail?goodsDetailId=45"><img src="/static/images/点击按钮.png"></a>
-              </div>
-            </div>
-            <div class="card4">
-              <img src="/static/images/IMG_2210.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <v-smallBanner2></v-smallBanner2>
+    <!--
+    judge为false
+    -->
+    <div v-else>
 
     </div>
 
@@ -112,6 +48,17 @@
   import carousel from "@/components/common/carousel-1"
   import carouseSmall from "@/components/common/carousel-small"
   import smallBanner2 from "@/components/common/smallBanner2"
+  import title from "@/components/common/title"
+  import hotelRank from "@/components/common/hotelRank"
+  import ruralTown from "@/components/common/ruralTown"
+  import hotComment from "@/components/common/hotComment"
+  import hotRegion from "@/components/common/hotRegion"
+
+  import activity from "@/components/common/activity"
+
+
+
+
 
   import footer from "@/components/footer/footer"
 /*
@@ -121,16 +68,17 @@
     data(){
 
       return{
-/*
-        name:'fang',
-*/
-        title:'没有多余的喧嚣，没有冗余的广告。',
-        content:"这里的所有产品都来自朴实美丽的乡村，在这里你所能得到的不仅仅是优质产品，还可以读取一个个产品背后的生动故事。我们希望，这些故事能带你进入匠人和村民的世界，感受他们的点点滴滴。",
+        judge:true,
+
+        /*
+                name:'fang',
+        */
+        title:'一切，都只为你',
+        content:"这里，你可自由定制，自由计划。一切，随你而动。",
         sumup:'村先游，身未动，心先游。',
       }
     },
     create(){
-      this.init()
 
     },
     components:{
@@ -138,9 +86,19 @@
       "v-jingyu":jingyu,
       "v-carousel":carousel,
       "v-carouseSmall":carouseSmall,
-      "v-smallBanner2":smallBanner2
+      "v-smallBanner2":smallBanner2,
+      "v-title":title,
+      "v-hotel-rank":hotelRank,
+       "v-rural-town":ruralTown,
+       "v-hot-comment":hotComment,
+      "v-activity":activity,
+      "v-hot-region":hotRegion
 
-    },
+
+
+
+
+},
     computed: {
 
 
@@ -148,14 +106,7 @@
     mounted () {
     },
     methods:{
-      /*init(){
-        swiper = new Swiper('.swiper-container', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-      })
-      },*/
+
 
 
     }
@@ -425,6 +376,28 @@
     background-color: #818dbe;
     border-color: #818dbe;
   }
+#chakanreping{width:1024px;height:510px;margin:0 auto;}
+
+
+
+
+
+
+/*
+#remendiqu .content .card2{height:360px;width:200px;float:left;margin-left:18px;margin-right:18px;background-color:white;}
+#remendiqu .content .card2 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
+#remendiqu .content .card2 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
+
+
+
+#remendiqu .content .card3{height:360px;width:200px;float:left;background-color:white;margin-right:18px;}
+#remendiqu .content .card3 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
+#remendiqu .content .card3 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
+
+#remendiqu .content .card4{height:360px;width:200px;float:left;background-color:white;}
+#remendiqu .content .card4 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
+#remendiqu .content .card4 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
+*/
 
 
 </style>

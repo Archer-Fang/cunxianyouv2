@@ -141,7 +141,7 @@
           this.alertText = '请输入验证码';
           return
         }
-        this.userInfo=await axios.post('/api/v2/login',{
+        this.userInfo=await axios.post('/api2/v2/login',{
                                     username:this.phoneNumber,
                                     password:this.password,
                                     captcha_code: this.captcha
