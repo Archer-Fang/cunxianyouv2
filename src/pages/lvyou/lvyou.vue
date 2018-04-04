@@ -1,7 +1,7 @@
 <template>
   <div >
     <v-carousel></v-carousel>
-    <v-title :judge="judge"></v-title>
+    <v-title :judge="judge" @judgeTrue="judgeTrue" @judgeFalse="judgeFalse"></v-title>
 <!--
     <div >judge:{{judge}}</div>
 -->
@@ -9,27 +9,33 @@
     judge为true
 -->
     <div v-if="judge">
-      <v-hotel-rank></v-hotel-rank>
-      <div id="chakanreping">
-      <v-rural-town></v-rural-town>
-      <v-hot-comment></v-hot-comment>
-      </div>
-<!--#
-      活动
--->
-      <v-activity></v-activity>
-<!--
-      热门地区
--->
-      <v-hot-region></v-hot-region>
+      <v-hotel-rank :rankSubtitle="rankSubtitle1" :rankTitle="rankTitle1"></v-hotel-rank>
+
     </div>
 
     <!--
     judge为false
     -->
     <div v-else>
+      <v-hotel-rank :rankSubtitle="rankSubtitle2" :rankTitle="rankTitle2"></v-hotel-rank>
 
     </div>
+
+<!--
+    显示接下来的内容
+-->
+    <div id="chakanreping">
+      <v-rural-town></v-rural-town>
+      <v-hot-comment></v-hot-comment>
+    </div>
+    <!--#
+          活动
+    -->
+    <v-activity></v-activity>
+    <!--
+          热门地区
+    -->
+    <v-hot-region></v-hot-region>
 
 
     <v-jingyu :title="title" :content="content" :sumup="sumup"></v-jingyu>
@@ -76,6 +82,11 @@
         title:'一切，都只为你',
         content:"这里，你可自由定制，自由计划。一切，随你而动。",
         sumup:'村先游，身未动，心先游。',
+        rankTitle1:"住宿",
+        rankSubtitle1:"住宿排行榜",
+        rankTitle2:"租车",
+        rankSubtitle2:"租车排行榜",
+
       }
     },
     create(){
@@ -106,7 +117,14 @@
     mounted () {
     },
     methods:{
-
+      judgeTrue(){
+        this.judge=true;
+        console.log("this.judge:"+this.judge);
+      },
+      judgeFalse(){
+        this.judge=false;
+        console.log("this.judge:"+this.judge);
+      }
 
 
     }

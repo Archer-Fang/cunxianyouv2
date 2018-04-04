@@ -3,11 +3,11 @@
      <div class="title1">
        <div class="container1">
          <div class="box1"><img src="/static/images/小黄条.png"></div>
-         <div class="box2">住宿</div>
+         <div class="box2">{{rankTitle}}</div>
          <div class="box3"><img src="/static/images/小黄条.png"></div>
        </div>
      </div>
-     <div class="subtitle txtwav flip">民宿排行榜</div>
+     <div class="subtitle txtwav flip">{{rankSubtitle}}</div>
      <div class="content">
        <div class="card1" style="margin-bottom:10px;">
          <div class="pic" style="background:url(/static/images/%E5%9B%BE%E7%89%871.png);">
@@ -165,7 +165,7 @@
         mounted(){
 
         },
-        props: [''],
+        props: ['rankTitle','rankSubtitle'],
         methods: {
 
 

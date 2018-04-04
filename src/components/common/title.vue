@@ -1,8 +1,8 @@
  <template>
    <div class="gongnenglanwrap">
      <div id="gongnenglan">
-       <div class="box2 zhushuimg" id="zhushuimg" style="margin-left:60px;"><img src="/static/images/lvyouzhushu3.png" style="width:20px;height:20px"> &nbsp;<span class="" :class="{a22:!judge,a2:judge}">住 宿</span></div>
-       <div class="box3 jiaotongimg" id="jiaotongimg">
+       <div class="box2 zhushuimg" id="zhushuimg" style="margin-left:60px;" @click="judgeTrue"><img src="/static/images/lvyouzhushu3.png" style="width:20px;height:20px"> &nbsp;<span class="" :class="{a22:!judge,a2:judge}">住 宿</span></div>
+       <div class="box3 jiaotongimg" id="jiaotongimg" @click="judgeFalse">
          <img src="/static/images/lvyoujiaotong2.png" style="width:20px;height:20px"> &nbsp;<span  :class="{a3:!judge,a33:judge}">交 通 </span>
         <!-- <div >
            <button type="button"
@@ -24,7 +24,9 @@
     	data(){
             return{
               count:0,
+/*
               judge1:judge,
+*/
             }
         },
         mounted(){
@@ -32,6 +34,12 @@
         },
         props: ['judge'],
         methods: {
+          judgeTrue(){
+            this.$emit('judgeTrue');
+          },
+          judgeFalse(){
+            this.$emit('judgeFalse');
+          },
           add(event){
             this.count++;
             this.judge1=!this.judge1;
