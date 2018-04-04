@@ -30,6 +30,8 @@
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
         <!--<a href="/front/techang" class="a1">特产</a><br>
         <a href="/front/goods" class="a1">特产陈列</a><br>-->
+        <router-link to="/techang" class="a2">特产</router-link><br/>
+
       </section>
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
         <!--<a href="/front/lvyou" class="a1">旅游</a><br>

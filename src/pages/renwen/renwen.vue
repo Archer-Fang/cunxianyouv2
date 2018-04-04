@@ -5,35 +5,46 @@
 <!--
     api:https://news-at.zhihu.com/api/4/news/before/20180402
 -->
-<!--
     <RenwenList :NewsList="DONE_NEWS_LIST_ROOT"></RenwenList>
--->
-    <LoadingTwo v-show="DONE_LOADING_TWO"></LoadingTwo>
-    <!-- ===the news list=== -->
-    <TopNews :TopNewsData="DONE_NEWS_LATEST.top_stories"></TopNews>
+    <div style="margin:0 auto;width:1000px;">
+      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-default btn" style="margin-left:400px;margin-top:40px;">更多</button>
+      <button @click="backToTop" v-show="BackToTopIsShow&& !DONE_LOADING_ONE && !DONE_LOADING_TWO" class="btn btn-default" style="margin-left:30px;margin-top:40px;">
+        回到顶部
+      </button>
+      <LoadingOne v-show="DONE_LOADING_ONE"></LoadingOne>
 
+    </div>>
+    <LoadingTwo v-show="DONE_LOADING_TWO"></LoadingTwo>
+
+    <!-- ===the news list=== -->
+<!--
+    <TopNews :TopNewsData="DONE_NEWS_LATEST.top_stories"></TopNews>
+-->
+
+<!--
     <div class="ml2 mt1 mr2" style="margin:0 auto;width:1000px;">
       <div v-for="list in DONE_NEWS_LIST_ROOT">
         <p class="news-lastet-time bold ml2">{{list.date | formatDate}}</p>
         <div v-for="item in list.stories">
-<!--
+&lt;!&ndash;
           <router-link :to="{name: 'news-detail', params: {id: item.id}}" style="color: black">
--->
+&ndash;&gt;
             <ZHihuListCover :title="item.title" :images="item.images[0]"></ZHihuListCover>
-<!--
+&lt;!&ndash;
           </router-link>
--->
+&ndash;&gt;
         </div>
       </div>
-      <!-- ===click the button to load more news== -->
+      &lt;!&ndash; ===click the button to load more news== &ndash;&gt;
       <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-default btn">更多</button>
-      <!-- ===the loading when news list loading=== -->
+      &lt;!&ndash; ===the loading when news list loading=== &ndash;&gt;
       <LoadingOne v-show="DONE_LOADING_ONE"></LoadingOne>
-      <!-- ===back to top button=== -->
+      &lt;!&ndash; ===back to top button=== &ndash;&gt;
       <button @click="backToTop" v-show="BackToTopIsShow" class="btn btn-default">
         回到顶部
       </button>
     </div>
+-->
    <!-- <div id="jingyu">
       <div class="logo"><img src="/static/images/白圈.png" style="position:absolute;left:460px;top:4.5px;"> <img
         src="/static/images/logo 拷贝.png" style="position:absolute;left:445px;top:10px;"></div>

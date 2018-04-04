@@ -4,7 +4,14 @@
      <div class="wenhua" v-for="item in list.stories">
 
         <div class="pic">
-          <img src="/static/images/图层 7.png">
+          <img :src="getImage(item.images[0])">
+<!--
+          <img :src="item.images[0]">
+-->
+
+          <!--
+                    {{item.images[0]}}
+          -->
         </div>
         <div class="title ">
 <!--
@@ -46,7 +53,19 @@
 
     },
     methods: {
-
+      getImage(url){
+        console.log("url:"+url);
+        console.log("before test");
+        // 把现在的图片连接传进来，返回一个不受限制的路径
+        if(url !== undefined){
+          let _u = url.substring( 7 );
+          console.log("newURL:"+'https://images.weserv.nl/?url=' + _u);
+          return 'https://images.weserv.nl/?url=' + _u;
+        }
+        /*
+              console.log("test");
+        */
+      }
 
     },
     filters: {
@@ -67,7 +86,7 @@
 
 
   #wenhuawrapper {
-    height: 890px;
+    height: auto;
     width: 1000px;
     margin: 0 auto;
     border-bottom: 1px solid #d9d9d9;

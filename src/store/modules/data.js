@@ -6,11 +6,7 @@ import {setStore, getStore,removeStore} from '@/config/mUtils'
 
 const urlBase = '/api/';
 const urlBase2 = '/api2/';
-//解决知乎图片访问限制问题
-/*var instance = axios.create({
-  baseURL: urlBase,
-  timeout: 1000,
-});*/
+
 const state={
   Captcha:{},
   UserInfo:{},
