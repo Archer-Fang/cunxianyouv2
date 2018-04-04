@@ -6,6 +6,8 @@ import test from '@/pages/test/test'
 import store from '@/store/store'
 import index from '@/pages/index/index'
 import renwen from '@/pages/renwen/renwen'
+import techang from '@/pages/techang/techang'
+
 
 
 
@@ -36,6 +38,11 @@ const router= new Router({
       path: '/login',
       name: 'login',
       component: login,
+    },
+    {
+      path: '/techang',
+      name: 'techang',
+      component: techang,
     },
     /*{
       path: '/test',
