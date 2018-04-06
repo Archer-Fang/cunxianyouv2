@@ -147,7 +147,7 @@
      </div>
      <div class="lookformore">
        <button type="button"
-               class="btn btn-default">浏览更多&nbsp;&gt;
+               class="btn btn-light">浏览更多&nbsp;&gt;
        </button>
      </div>
 

@@ -43,6 +43,8 @@
       </section>
       <section class="box3">
        <!-- <a href="/front/wenda"  class="a1">问答</a>-->
+        <router-link to="/wenda" class="a2">问答</router-link><br/>
+
       </section>
 
       <section v-if="Login">
@@ -56,7 +58,7 @@
 
         </section>
         <section class="box5" style="width:150px">
-          <button type="button" class="btn btn-default btn-sm">
+          <button type="button" class="btn btn-light btn-sm">
 
             <router-link :to="{name:'login'}" @click="loginOut">退出登录</router-link><!---->
           </button>
@@ -66,7 +68,7 @@
       </section>
       <section v-else>
         <section class="box5" style="width:150px">
-          <button type="button" class="btn btn-default ">
+          <button type="button" class="btn btn-light ">
             <router-link to="/login" >登录</router-link>
           </button>
 

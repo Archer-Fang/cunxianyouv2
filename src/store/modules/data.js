@@ -85,7 +85,7 @@ const mutations={
   }
 }
 const actions={
-
+//获取验证码
   [types.FETCH_CAPTCHA]({commit}) {
     axios.post(urlBase2+'v1/captchas',{})
       .then(res => {

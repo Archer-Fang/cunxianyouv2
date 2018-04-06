@@ -5,11 +5,15 @@ import App from './App'
 import router from './router'
 import store from './store/store'
 import jquery from 'jquery'
-
 /*
   引入bootstap
 */
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+/*
 require('bootstrap-loader');
+*/
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
 

@@ -6,7 +6,7 @@
          <img src="/static/images/lvyoujiaotong2.png" style="width:20px;height:20px"> &nbsp;<span  :class="{a3:!judge,a33:judge}">交 通 </span>
         <!-- <div >
            <button type="button"
-                   class="btn btn-default" v-on:click="add(judge)">+1&nbsp;&gt;
+                   class="btn btn-light" v-on:click="add(judge)">+1&nbsp;&gt;
            </button><br>
            number:{{count}}
            judgezi:{{judge}}

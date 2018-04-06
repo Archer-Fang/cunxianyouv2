@@ -206,11 +206,11 @@
   .mainone .left1{
 
     height:494px;
-    width:356px;
+    width:409px;
     transition:width 1s;
     float:left;
     text-align:center;
-    padding-top:103px;
+    padding-top:50px;
     padding-left:17px;
     padding-right:17px;
     background-color: rgba(244,244,244,0.9);
@@ -272,11 +272,11 @@
   .maintwo .right2{
 
     height:494px;
-    width:356px;
+    width:409px;
     transition: width 1s;
     float:right;
     text-align:center;
-    padding-top:103px;
+    padding-top:50px;
     padding-left:17px;
     padding-right:17px;
     background-color: rgba(244,244,244,0.9);
@@ -324,11 +324,11 @@
   .mainthree .left3{
     background-color: rgba(244,244,244,0.9);
     height:494px;
-    width:356px;
+    width:409px;
     transition: width 1s;
     float:left;
     text-align:center;
-    padding-top:103px;
+    padding-top:50px;
     padding-left:17px;
     padding-right:17px;
   }

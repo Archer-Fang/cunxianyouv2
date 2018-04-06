@@ -1,7 +1,6 @@
 <template>
   <div >
 
-
     <v-footer >
     </v-footer>
   </div>

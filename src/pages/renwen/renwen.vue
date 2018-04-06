@@ -7,8 +7,8 @@
 -->
     <RenwenList :NewsList="DONE_NEWS_LIST_ROOT"></RenwenList>
     <div style="margin:0 auto;width:1000px;">
-      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-default btn" style="margin-left:400px;margin-top:40px;">更多</button>
-      <button @click="backToTop" v-show="BackToTopIsShow&& !DONE_LOADING_ONE && !DONE_LOADING_TWO" class="btn btn-default" style="margin-left:30px;margin-top:40px;">
+      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-light btn" style="margin-left:400px;margin-top:40px;">更多</button>
+      <button @click="backToTop" v-show="BackToTopIsShow&& !DONE_LOADING_ONE && !DONE_LOADING_TWO" class="btn btn-light" style="margin-left:30px;margin-top:40px;">
         回到顶部
       </button>
       <LoadingOne v-show="DONE_LOADING_ONE"></LoadingOne>
@@ -36,11 +36,11 @@
         </div>
       </div>
       &lt;!&ndash; ===click the button to load more news== &ndash;&gt;
-      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-default btn">更多</button>
+      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-light btn">更多</button>
       &lt;!&ndash; ===the loading when news list loading=== &ndash;&gt;
       <LoadingOne v-show="DONE_LOADING_ONE"></LoadingOne>
       &lt;!&ndash; ===back to top button=== &ndash;&gt;
-      <button @click="backToTop" v-show="BackToTopIsShow" class="btn btn-default">
+      <button @click="backToTop" v-show="BackToTopIsShow" class="btn btn-light">
         回到顶部
       </button>
     </div>
@@ -136,7 +136,7 @@
 
 
     },
-    filters: {
+    filters: {//20180401--》2018年04月01天
       formatDate(value){
         var middleState = value.split("");
         middleState.splice(4,0,"年");

@@ -8,6 +8,8 @@ import index from '@/pages/index/index'
 import renwen from '@/pages/renwen/renwen'
 import techang from '@/pages/techang/techang'
 import lvyou from '@/pages/lvyou/lvyou'
+import wenda from '@/pages/wenda/wenda'
+
 
 
 
@@ -49,6 +51,11 @@ const router= new Router({
       path: '/lvyou',
       name: 'lvyou',
       component: lvyou,
+    },
+    {
+      path: '/wenda',
+      name: 'wenda',
+      component: wenda,
     },
     /*{
       path: '/test',

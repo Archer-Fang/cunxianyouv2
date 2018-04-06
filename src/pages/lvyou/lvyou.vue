@@ -349,7 +349,7 @@
     border: 1px solid transparent;
     border-radius: 4px;
   }
-  .btn-default {
+  .btn-light {
     color: #333;
     background-color: #fff;
     border-color: #ccc;

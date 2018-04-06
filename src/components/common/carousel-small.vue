@@ -75,6 +75,7 @@
                 style="text-shadow: 1px 1px 2px #333;"
                 controls
                 indicators
+                background="#ababab"
                 :interval="4000"
                 img-width="150px"
                 img-height="135px"
@@ -127,78 +128,16 @@
     <div class="shangpinming">
       简约桃木餐桌
     </div>
-    <!--
-        <b-carousel id="carousel1"
-                    style="text-shadow: 1px 1px 2px #333;margin-top:60px;"
-                    indicators
-                    img-width="150px"
-                    background="#ababab"
-                    v-model="slide"
 
-        >
-
-    &lt;!&ndash; @sliding-start="onSlideStart"
-                    @sliding-end="onSlideEnd" controls                  :interval="4000"
-
-           Text slides with image
-    &ndash;&gt;
-          &lt;!&ndash;<b-carousel-slide caption="First slide"
-                            text="fang"
-                            style="height: 520px;"
-                            img-src="./static/images/最初的美好.png"
-          >    <img class="d-block img-fluid w-100" width="1024" height="480" src="./static/images/最初的美好.png">
-          </b-carousel-slide>&ndash;&gt;
-          <b-carousel-slide img-width="150px" style="height: 135px;">&lt;!&ndash;&ndash;&gt;
-            <img src="/static/images/IMG_2199.png" width="100%" height="100%">
-
-          </b-carousel-slide>
-        &lt;!&ndash;  <b-carousel-slide style="height: 135px;" caption="First slide"
-                            text="fang">
-             <img src="/static/images/IMG_2199.png" width="150px" height="135px">
-          </b-carousel-slide>&ndash;&gt;
-
-          &lt;!&ndash; Slides with custom text &ndash;&gt;
-         &lt;!&ndash; <b-carousel-slide img-src="./static/images/最初的美好.png"  style="height: 520px;">
-            <h1>Hello world!</h1>
-          </b-carousel-slide>&ndash;&gt;
-
-          &lt;!&ndash; Slides with image only &ndash;&gt;
-        &lt;!&ndash;  <b-carousel-slide img-src="./static/images/最初的美好.png"  style="height: 520px;">
-            <img src="./static/images/最初的美好.png">
-
-          </b-carousel-slide>&ndash;&gt;
-
-          &lt;!&ndash; Slides with img slot &ndash;&gt;
-          &lt;!&ndash; Note the classes .d-block and .img-fluid to prevent browser default image alignment &ndash;&gt;
-          &lt;!&ndash;<b-carousel-slide>
-            <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-                 src="https://lorempixel.com/1024/480/technics/5/" alt="image slot">
-          </b-carousel-slide>&ndash;&gt;
-         &lt;!&ndash; <b-carousel-slide img-src="./static/images/最初的美好.png"  style="height: 520px;">
-            <img src="./static/images/最初的美好.png">
-
-          </b-carousel-slide>&ndash;&gt;
-
-          &lt;!&ndash; Slide with blank fluid image to maintain slide aspect ratio &ndash;&gt;
-         &lt;!&ndash; <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image" style="height: 520px;">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
-              ut lacus vel interdum.
-            </p>
-          </b-carousel-slide>&ndash;&gt;
-
-        </b-carousel>
-    -->
     <div style="width: 200px;height:135px;padding-left:25px;padding-right: 25px;float: left;">
-      <b-carousel id="carousel1"
+      <b-carousel id="carousel2"
                   style="text-shadow: 1px 1px 2px #333;"
                   controls
                   indicators
                   :interval="4000"
                   img-width="150px"
                   img-height="135px"
-                  v-model="slide"
+                  v-model="slide2"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
@@ -319,7 +258,7 @@
                   :interval="4000"
                   img-width="150px"
                   img-height="135px"
-                  v-model="slide"
+                  v-model="slide3"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
@@ -440,7 +379,7 @@
                   :interval="4000"
                   img-width="150px"
                   img-height="135px"
-                  v-model="slide"
+                  v-model="slide4"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
@@ -561,7 +500,7 @@
                   :interval="4000"
                   img-width="150px"
                   img-height="135px"
-                  v-model="slide"
+                  v-model="slide5"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
@@ -682,7 +621,7 @@
                   :interval="4000"
                   img-width="150px"
                   img-height="135px"
-                  v-model="slide"
+                  v-model="slide6"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
@@ -732,7 +671,12 @@
     data () {
       return {
         slide: 0,
-        sliding: null
+        slide2: 0,
+        slide3: 0,
+        slide4: 0,
+        slide5: 0,
+        slide6: 0,
+        sliding: null,
       }
     },
     methods: {
@@ -745,6 +689,7 @@
     }
   }
 </script>
+<!--
 <style>
   .carousel-indicators li {
     /*display: inline-block;
@@ -787,6 +732,7 @@
   }
 
 </style>
+-->
 <style scoped="">
    .card1{height:300px;width:200px;float:left;background-color:white;margin-left:18px;margin-bottom:10px;}
    .card1 .honglan{height:25px;width:200px;float:left;}

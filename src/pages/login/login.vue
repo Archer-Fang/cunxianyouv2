@@ -11,7 +11,7 @@
             <!--<div v-show="DONE_NEWS_LATEST.top_stories">
 
             </div>-->
-           <!-- <button type="button" class="btn btn-default btn-lg">
+           <!-- <button type="button" class="btn btn-light btn-lg">
               <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
             </button>-->
           </section>
