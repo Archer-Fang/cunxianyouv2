@@ -1,50 +1,51 @@
 <template>
   <div >
     <v-carousel></v-carousel>
-
-    <div id="rexiao" style="height:auto;background-size: 1000px 827px;background: url(/static/images/img1111.png) no-repeat center;">
-      <div class="title">
-        <div class="container1">
-          <div class="box1"><img src="/static/images/小黄条.png"></div>
-          <div class="box2">这里 热销无比</div>
-          <div class="box3"><img src="/static/images/小黄条.png"></div>
+    <div style="height:auto;">
+     <div id="rexiao" style="background-size: 1000px 827px;background: url(/static/images/img1111.png) no-repeat center;">
+        <div class="title">
+          <div class="container1">
+            <div class="box1"><img src="/static/images/小黄条.png"></div>
+            <div class="box2">这里 热销无比</div>
+            <div class="box3"><img src="/static/images/小黄条.png"></div>
+          </div>
         </div>
-      </div>
-      <div class="subtitle txtwav flip">本周热销榜</div>
-      <div class="content">
-        <!--{{#each dataList}}
-        <div class="card1" style="box-shadow: 0 0 15px 2px #F5F5F5;">
-          <div class="honglan">
-          </div>
-          <div class="shangpinming">
-            {{hotel_name}}
-          </div>
-          <div  >
-            <div class="swiper-container" style=" padding:0 0 0 20px;height:195px;    width: 90%;">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
-                <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
+        <div class="subtitle txtwav flip">本周热销榜</div>
+        <div class="content">
+          <!--{{#each dataList}}
+          <div class="card1" style="box-shadow: 0 0 15px 2px #F5F5F5;">
+            <div class="honglan">
+            </div>
+            <div class="shangpinming">
+              {{hotel_name}}
+            </div>
+            <div  >
+              <div class="swiper-container" style=" padding:0 0 0 20px;height:195px;    width: 90%;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
+                  <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
+                  <div class="swiper-slide"><a href="/front/goodsDetail?goodsDetailId={{hotel_detail_id}}"><img src="{{hotel_img}}" width="150px" height="135px"></a></div>
+                </div>
+                &lt;!&ndash; 如果需要分页器 &ndash;&gt;
+                <div class="swiper-pagination" style="    "></div>
+                &lt;!&ndash; 如果需要滚动条 &ndash;&gt;
               </div>
-              &lt;!&ndash; 如果需要分页器 &ndash;&gt;
-              <div class="swiper-pagination" style="    "></div>
-              &lt;!&ndash; 如果需要滚动条 &ndash;&gt;
+            </div>
+            <div class="jiage">
+              &yen999.9
             </div>
           </div>
-          <div class="jiage">
-            &yen999.9
-          </div>
+          {{/each}}-->
+          <v-carouseSmall></v-carouseSmall>
+
         </div>
-        {{/each}}-->
-        <v-carouseSmall></v-carouseSmall>
 
-      </div>
-
-      <div class="lookformore" style="padding-left: 20px;">
-        <a href="/front/goods"><img src="/static/images/浏览更多按钮.png" style="     margin-top: 0px; "></a>
-      </div>
-
-      <div id="wulong"><a href="/front/goodsDetail?goodsDetailId=18"><img src="/static/images/wulong.png" width="1000px"/></a></div>
+        <div class="lookformore" style="padding-left: 20px;">
+          <a href="/front/goods"><img src="/static/images/浏览更多按钮.png" style="     margin-top: 0px; "></a>
+        </div>
+     </div>
+      <div id="wulong">
+        <a href="/front/goodsDetail?goodsDetailId=18"><img src="/static/images/wulong.png" width="1000px"/></a></div>
 
 
       <div id="gushi">
@@ -93,9 +94,9 @@
 
     <v-smallBanner2></v-smallBanner2>
 
+
+
     </div>
-
-
     <v-jingyu :title="title" :content="content" :sumup="sumup"></v-jingyu>
     <v-footer :renwen="true">
     </v-footer>

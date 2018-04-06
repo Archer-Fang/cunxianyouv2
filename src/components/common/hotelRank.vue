@@ -147,7 +147,7 @@
      </div>
      <div class="lookformore">
        <button type="button"
-               class="btn btn-light">浏览更多&nbsp;&gt;
+               class="btn btn-default">浏览更多&nbsp;&gt;
        </button>
      </div>
 
@@ -174,6 +174,17 @@
 </script>
 
 <style  scoped>
+  .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    cursor: pointer;
+  }
+  .btn-default:hover {
+
+    background-color: #ccc;
+
+  }
   #rexiao{width:1024px;margin:0 auto;height:807px;background-color:#e9e9e9;}
   #rexiao .title1{width:1024px;height:55px;margin:0 auto;}
   #rexiao .title1 .container1{margin:0 auto;height:55px;width:245px;}

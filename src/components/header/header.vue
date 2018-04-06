@@ -60,7 +60,7 @@
         <section class="box5" style="width:150px">
           <button type="button" class="btn btn-light btn-sm">
 
-            <router-link :to="{name:'login'}" @click="loginOut">退出登录</router-link><!---->
+            <span @click="loginOut">退出登录</span><!---->
           </button>
 
         </section>
@@ -109,6 +109,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
       this.$emit('closeTip')
     },
     loginOut(){
+      console.log("click loginOut");
       this.$emit('loginOut')
 
     }

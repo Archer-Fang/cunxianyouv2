@@ -3,7 +3,6 @@
     <v-carousel></v-carousel>
     <div class="renwencontainer">
       <div class="content">
-<v-quiz></v-quiz>
         <div class="wangyou">
           网友&村民<!--<div class="testTxtWav" >test</div>-->
         </div>
@@ -26,11 +25,11 @@
         <div class="searchplace">
 
           <ul class="nav nav-pills">
-            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-light navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;吃&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
-            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-light navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;喝&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
-            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-light navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;玩&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
-            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-light navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;住&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
-            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-light navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;行&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
+            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-default navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;吃&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
+            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-default navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;喝&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
+            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-default navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;玩&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
+            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-default navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;住&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
+            <li role="presentation" class="active " style="width:170px;"><button type="button" class="btn btn-default navbar-btn center-block btn-color_3" style="border:hidden;  width:60px; height:30px; font-size:14px; color:#8b8b8b;"><img src="/static/images/分栏圆点.png" >&nbsp;&nbsp;行&nbsp;&nbsp;<img src="/static/images/分栏圆点.png"></button></li>
           </ul>
 
         </div>
@@ -216,8 +215,8 @@
 
          <div class="blank">
          </div>-->
-        <div class="blank" style="height:30px">
-          <button type="button" class="btn btn-light navbar-btn center-block btn-color_2" style=" width:100px; height:30px; font-size:14px; color:#8b8b8b;box-shadow: 0 0 15px 2px #F5F5F5;display:flex;justify-content: center;align-items:center;">&nbsp;&nbsp;&nbsp;&nbsp;更新&nbsp;&nbsp;
+        <div class="blank" style="height: 50px;display: flex; justify-content: center; align-items: center;">
+          <button type="button" class="btn btn-default navbar-btn center-block btn-color_2" style=" width:100px; height:40px; font-size:14px; color:#8b8b8b;box-shadow: 0 0 15px 2px #F5F5F5;">&nbsp;&nbsp;&nbsp;&nbsp;更新&nbsp;&nbsp;
             <img src="/static/images/刷新.png " ></button>
         </div>
         <div class="blank">
@@ -282,9 +281,21 @@
 </script>
 
 <style scoped="" >
+
 /*
   @import "../../assets/css/txt.wav.css";
 */
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  cursor: pointer;
+}
+.btn-default:hover {
+
+  background-color: #ccc;
+
+}
   .renwencontainer{
     height:auto;
 

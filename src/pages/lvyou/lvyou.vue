@@ -321,7 +321,17 @@
 
   #footer{height:140px;width:1000px;margin:0 auto;text-align:center;font-size:14px;color:#949494;font-family:宋体;line-height:140px;}
 
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  cursor: pointer;
+}
+.btn-default:hover {
 
+  background-color: #ccc;
+
+}
   .btn-primary {
     color: #fff;
     background-color: #337ab7;

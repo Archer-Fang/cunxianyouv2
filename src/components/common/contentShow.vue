@@ -168,16 +168,21 @@
            <div class="box4">
              <img src="/static/images/已回答.png"/>
            </div>
+
+
          </div>
        </div>
      </div>
      <div style="position:relative;left:935px;top:-140px;width:5px;height:5px;">
-       <button data-toggle="modal" data-target="#myModal" style="outline:none;background:none;    border-style: none;     border-width: 0px; padding:0px;">
-         <img src="/static/images/提问按钮.png">
-       </button>	<br>
-       <button data-toggle="modal" data-target="#myModal2" style="outline:none;background:none;    border-style: none;     border-width: 0px; padding:0px;">
+       <v-quiz></v-quiz>
+<!--
+       <v-quiz></v-quiz>
+-->
+
+       <br>
+     <!--  <button data-toggle="modal" data-target="#myModal2" style="outline:none;background:none;    border-style: none;     border-width: 0px; padding:0px;">
          <img src="/static/images/收藏按钮.png">
-       </button>
+       </button>-->
      </div>
 
      <!--<div class="img2">
@@ -223,6 +228,7 @@
  </template>
 
 <script>
+  import quiz from "@/components/common/quiz"
 
     export default {
     	data(){
@@ -232,6 +238,11 @@
         mounted(){
 
         },
+      components:{
+
+        "v-quiz":quiz,
+
+      },
         props: [''],
         methods: {
 

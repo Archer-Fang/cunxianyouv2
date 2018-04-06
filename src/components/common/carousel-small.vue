@@ -734,7 +734,7 @@
 </style>
 -->
 <style scoped="">
-   .card1{height:300px;width:200px;float:left;background-color:white;margin-left:18px;margin-bottom:10px;}
+   .card1{height:300px;width:200px;float:left;background-color:white;margin-left:18px;margin-bottom:10px;box-shadow: 0 0 15px 2px #f1f1f1;}
    .card1 .honglan{height:25px;width:200px;float:left;}
    .card1 .shangpinming{height:45px;width:200px;float:left;color:#3d3d3d;text-align:center;line-height:45px;font-size:17px;font-family:宋体;font-weight:bold;}
    .card1 .neirong{height:165px;width:200px;float:left;}
