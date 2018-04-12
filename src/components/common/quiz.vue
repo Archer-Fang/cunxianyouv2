@@ -121,8 +121,7 @@
     }
 </script>
 
-<style  scoped>
-/*
+<style lang="scss" scoped="">/*
   @import "../../assets/open-iconic-master/font/css/open-iconic-bootstrap.css";
 */
 </style>

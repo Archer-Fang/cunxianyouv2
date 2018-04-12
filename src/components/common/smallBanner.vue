@@ -77,8 +77,8 @@
     }
 </script>
 
-<style  scoped>
-  .page3{
+<style lang="scss" scoped>
+ /* .page3{
     width: 100%;
     height: 173px;
     margin:0 auto;
@@ -102,5 +102,27 @@
     justify-content: center;
     align-items: center;
 
-  }
+  }*/
+ .page3 {
+   width: 100%;
+   height: 173px;
+   margin: 0 auto;
+   background-color: #efefef;
+ }
+ .main {
+   background-color: #efefef;
+   height: 173px;
+   width: 1000px;
+   margin: 0 auto;
+   .box1 {
+     background-color: #efefef;
+     height: 173px;
+     width: 250px;
+     float: left;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+
 </style>

@@ -100,8 +100,8 @@
     }
 </script>
 
-<style  scoped>
-  #wugetuijian{height:180px;width:975px;margin-top:35px;margin-bottom:35px;margin-left:auto;margin-right:auto;}
-  #wugetuijian .box1{width:180px;height:180px;float:left;margin-left:15px;box-shadow: 0 0 15px 2px #F5F5F5;}
+<style  lang="scss" scoped>
+  #wugetuijian{height:180px;width:975px;margin-top:35px;margin-bottom:35px;margin-left:auto;margin-right:auto;
+  .box1{width:180px;height:180px;float:left;margin-left:15px;box-shadow: 0 0 15px 2px #F5F5F5;}}
 
 </style>

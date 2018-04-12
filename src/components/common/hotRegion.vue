@@ -58,8 +58,8 @@
     }
 </script>
 
-<style  scoped>
-  #remendiqu{
+<style  lang="scss" scoped>
+  /*#remendiqu{
     width: 1024px;
     margin: 0 auto;
     height: 507px;
@@ -84,7 +84,95 @@
 
   #remendiqu .content .card1{height:360px;width:200px;float:left;background-color:white;margin-left:13px;}
   #remendiqu .content .card1 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
-  #remendiqu .content .card1 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
+  #remendiqu .content .card1 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}*/
+  #remendiqu {
+    width: 1024px;
+    margin: 0 auto;
+    height: 507px;
+    background-color: white;
+    .title {
+      width: 1024px;
+      height: 55px;
+      margin: 0 auto;
+      .container {
+        margin: 0 auto;
+        height: 55px;
+        width: 245px;
+      }
+      .box1 {
+        width: 35px;
+        height: 55px;
+        float: left;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .box2 {
+        width: 145px;
+        height: 55px;
+        float: left;
+        font-size: 24px;
+        font-family: 宋体;
+        font-weight: bold;
+        color: #3a3a3a;
+        text-align: center;
+        line-height: 55px;
+      }
+      .box3 {
+        width: 35px;
+        height: 55px;
+        float: left;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .subtitle {
+      height: 45px;
+      width: 1024px;
+      color: #bababa;
+      text-align: center;
+      line-height: 45px;
+      font-size: 15px;
+      font-family: 宋体;
+      font-weight: bold;
+    }
+    .content {
+      height: 360px;
+      width: 854px;
+      padding-top: 10px;
+      padding-bottom: 35px;
+      margin: 0 auto;
+      .card1 {
+        height: 360px;
+        width: 200px;
+        float: left;
+        background-color: white;
+        margin-left: 13px;
+        .pic {
+          height: 290px;
+          width: 200px;
+          float: left;
+          border-radius: 10px;
+        }
+        .wenzi {
+          height: 70px;
+          width: 200px;
+          float: left;
+          font-size: 24px;
+          color: #535353;
+          text-align: center;
+          line-height: 70px;
+        }
+      }
+    }
+  }
 
 
 </style>

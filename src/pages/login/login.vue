@@ -172,10 +172,9 @@
     }
   }
 </script>
-<style  scoped>
+<style lang="scss" scoped="">
 
-
-  #wrap{height:775px;width:1000px;margin:0 auto;}
+ /* #wrap{height:775px;width:1000px;margin:0 auto;}
 
   #content{
     width: 800px;height: 535px;background-color: grey;
@@ -186,7 +185,7 @@
   }
   #pic1{
     width: 200px;height: 50px;
-   /* margin-top: 55px;*/
+   !* margin-top: 55px;*!
     margin-left: 160px;
   }
   #welcome{
@@ -293,6 +292,191 @@
   h4{
     color: black;display: inline;
   }
-  input:-webkit-autofill { box-shadow: 0 0 0px 1000px #f2f2f2 inset !important;}
+  input:-webkit-autofill { box-shadow: 0 0 0px 1000px #f2f2f2 inset !important;}*/
+ #wrap {
+   height: 775px;
+   width: 1000px;
+   margin: 0 auto;
+ }
+ #content {
+   width: 800px;
+   height: 535px;
+   background-color: grey;
+   margin: 120px auto 120px auto;
+   border-radius: 15px;
+ }
+ #left {
+   width: 400px;
+   height: 535px;
+   background-color: white;
+   border-top-left-radius: 15px;
+   float: left;
+   border-bottom-left-radius: 15px;
+ }
+ #pic1 {
+   width: 200px;
+   height: 50px;
+   margin-left: 160px;
+ }
+ #welcome {
+   width: 400px;
+   height: 40px;
+   font-size: 25px;
+   text-align: center;
+   font-family: "Microsoft Yahei";
+   color: #878787;
+ }
+ #meili {
+   width: 400px;
+   height: 30px;
+   font-size: 12px;
+   text-align: center;
+   font-family: "Microsoft Yahei";
+   color: #bebebe;
+   margin-top: 0px;
+ }
+ #account {
+   width: 300px;
+   height: 40px;
+   margin-top: 20px;
+   margin-left: 50px;
+   input {
+     display: block;
+     width: 300px;
+     height: 40px;
+     background-color: #f2f2f2;
+     border-radius: 5px;
+     border: 0;
+     text-align: center;
+   }
+ }
+ #password {
+   width: 300px;
+   height: 40px;
+   margin-top: 30px;
+   margin-left: 50px;
+   input {
+     display: block;
+     width: 240px;
+     height: 40px;
+     background-color: #f2f2f2;
+     border-radius: 5px;
+     border: 0;
+     text-align: center;
+     float: left;
+   }
+   .passwordControl {
+     display: block;
+     width: 50px;
+     background-color: #f2f2f2;
+     border-color: black;
+     border-radius: 5px;
+     border: 1px solid transparent;
+     margin-left: 10px;
+     text-align: center;
+     font-size: 0.1rem;
+     float: left;
+     cursor: pointer;
+   }
+ }
+ #captchaCode {
+   width: 300px;
+   height: 40px;
+   margin-top: 20px;
+   margin-left: 50px;
+   input {
+     display: block;
+     width: 200px;
+     height: 40px;
+     background-color: #f2f2f2;
+     border-radius: 5px;
+     border: 0;
+     text-align: center;
+     float: left;
+   }
+   .img_change_img {
+     display: block;
+     width: 80px;
+     height: 40px;
+     background-color: #f9f9f9;
+     border: 0;
+     text-align: center;
+     float: left;
+     margin-left: 20px;
+     cursor: pointer;
+   }
+ }
+ #btn {
+   width: 300px;
+   height: 40px;
+   margin-top: 30px;
+   margin-left: 50px;
+ }
+ .wrong_phone_number {
+   background-color: #f2f2f2;
+   display: block;
+   width: 300px;
+   height: 40px;
+   border-radius: 5px;
+   color: #adadad;
+   border: 0;
+ }
+ .right_phone_number {
+   background-color: #ffa735;
+   display: block;
+   width: 300px;
+   height: 40px;
+   border-radius: 5px;
+   color: white;
+   border: 0;
+ }
+ #register {
+   width: 140px;
+   height: 40px;
+   background-color: #ffa735;
+   border-radius: 20px;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 12px;
+   margin-top: 32px;
+   line-height: 40px;
+   a {
+     color: white;
+     text-decoration: none;
+   }
+ }
+ #p {
+   width: 400px;
+   height: 20px;
+   margin-top: 30px;
+   font-size: 12px;
+   line-height: 20px;
+   text-align: center;
+   color: #ccc;
+ }
+ #right {
+   width: 400px;
+   height: 535px;
+   background-color: #cff;
+   border-top-right-radius: 15px;
+   float: left;
+   border-bottom-right-radius: 15px;
+   img {
+     width: 400px;
+     height: 535px;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
+   }
+ }
+ h4 {
+   color: black;
+   display: inline;
+ }
+ input {
+   &:-webkit-autofill {
+     box-shadow: 0 0 0px 1000px #f2f2f2 inset !important;
+   }
+ }
+
 
 </style>

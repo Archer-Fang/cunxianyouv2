@@ -45,13 +45,13 @@
     }
 </script>
 
-<style  scoped>
+<style  lang="scss" scoped>
   .btn-info3 {
     color: #fff;
     background-color: #3d7d57;
     border-color: #3d7d57;
   }
-  #huodong{width:1024px;height:295px;margin:0 auto;position:relative;}
+ /* #huodong{width:1024px;height:295px;margin:0 auto;position:relative;}
   #huodong .img_1{position:absolute;top:0px;left:0px;z-index:-1;}
   #huodong .blank{width:1024px;height:60px;float:left;background-color: rgba(0,0,0,0.5);}
   #huodong .blank1{width:1024px;height:25px;float:left;background-color: rgba(0,0,0,0.5);}
@@ -60,7 +60,80 @@
   #huodong .pic{width:1024px;height:35px;float:left;display: flex;justify-content: center;align-items: center;background-color: rgba(0,0,0,0.5);}
   #huodong .content{width:1024px;height:25px;float:left;font-size:20px;text-align:center;color:white;line-height:25px;background-color: rgba(0,0,0,0.5);}
   #huodong .price{width:1024px;height:25px;float:left;font-size:20px;text-align:center;color:white;line-height:25px;background-color: rgba(0,0,0,0.5);}
-  #huodong .button{width:1024px;height:100px;float:left;display: flex;justify-content: center;align-items: center;background-color: rgba(0,0,0,0.5);}
+  #huodong .button{width:1024px;height:100px;float:left;display: flex;justify-content: center;align-items: center;background-color: rgba(0,0,0,0.5);}*/
+  #huodong {
+    width: 1024px;
+    height: 295px;
+    margin: 0 auto;
+    position: relative;
+  .img_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .blank {
+    width: 1024px;
+    height: 60px;
+    float: left;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .blank1 {
+    width: 1024px;
+    height: 25px;
+    float: left;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .title1 {
+    width: 1024px;
+    height: 25px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .pic {
+    width: 1024px;
+    height: 35px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .content {
+    width: 1024px;
+    height: 25px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .price {
+    width: 1024px;
+    height: 25px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .button {
+    width: 1024px;
+    height: 100px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+  }
+  }
+
 
 
 </style>

@@ -56,17 +56,95 @@
     }
 </script>
 
-<style  scoped>
-    .right{width:275px;height:455px;margin-left:60px;margin-right:25px;padding-top:55px;float:left;position:relative;}
-    .right .img_10{position:absolute;top:60px;left:0px;z-index:-1;}
-    .right .wrap{width:245px;height:415px;margin-left:15px;margin-right:15px;float:left;}
-    .right .wrap .reping{width:245px;height:70px;float:left;font-size:22px;color:#b6b6b6;line-height:30px;padding-top:15px;}
-    .right .wrap .zongti{width:245px;height:65px;float:left;font-size:24px;}
-    .right .wrap .xingxing{width:245px;height:30px;float:left;}
-    .right .wrap .kongbai{width:245px;height:30px;float:left;}
-    .right .wrap .neirong{width:245px;height:90px;float:left;font-size:14px;color:#a9a9a9;line-height:32px;}
-    .right .wrap .touxiang{width:245px;height:80px;float:left;font-size:14px;color:#a9a9a9;display: flex;justify-content: center;align-items: center;margin-left:-25px;}
-    .right .wrap .shangxia{width:245px;height:50px;float:left;}
-    .right .wrap .shangxia .shang{width:122px;height:50px;float:left;display: flex;justify-content: center;align-items: center;margin-top:-20px;}
-    .right .wrap .shangxia .xia{width:123px;height:50px;float:left;display: flex;justify-content: center;align-items: center;margin-top:-20px;}
+<style lang="scss" scoped>
+  .right {
+    width: 275px;
+    height: 455px;
+    margin-left: 60px;
+    margin-right: 25px;
+    padding-top: 55px;
+    float: left;
+    position: relative;
+    .img_10 {
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      z-index: -1;
+    }
+    .wrap {
+      width: 245px;
+      height: 415px;
+      margin-left: 15px;
+      margin-right: 15px;
+      float: left;
+      .reping {
+        width: 245px;
+        height: 70px;
+        float: left;
+        font-size: 22px;
+        color: #b6b6b6;
+        line-height: 30px;
+        padding-top: 15px;
+      }
+      .zongti {
+        width: 245px;
+        height: 65px;
+        float: left;
+        font-size: 24px;
+      }
+      .xingxing {
+        width: 245px;
+        height: 30px;
+        float: left;
+      }
+      .kongbai {
+        width: 245px;
+        height: 30px;
+        float: left;
+      }
+      .neirong {
+        width: 245px;
+        height: 90px;
+        float: left;
+        font-size: 14px;
+        color: #a9a9a9;
+        line-height: 32px;
+      }
+      .touxiang {
+        width: 245px;
+        height: 80px;
+        float: left;
+        font-size: 14px;
+        color: #a9a9a9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -25px;
+      }
+      .shangxia {
+        width: 245px;
+        height: 50px;
+        float: left;
+        .shang {
+          width: 122px;
+          height: 50px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -20px;
+        }
+        .xia {
+          width: 123px;
+          height: 50px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+
 </style>

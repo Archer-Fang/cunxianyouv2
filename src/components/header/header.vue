@@ -121,8 +121,9 @@ import {mapState, mapActions} from 'vuex'
 }
 
 </script>
-<style scoped>
+<style lang="scss" scoped>
   /* CSS Document */
+  /*
   body{
     margin:0;
     height: 100%;
@@ -167,7 +168,7 @@ import {mapState, mapActions} from 'vuex'
     cursor:pointer;
     text-decoration:none;
   }
-  /*#current*/
+  !*#current*!
   .router-link-active
   {
     color: #6d952f;
@@ -267,5 +268,141 @@ import {mapState, mapActions} from 'vuex'
     vertical-align: middle;
     background-color:#FBFAFA;
 
+  }*/
+  body {
+    margin: 0;
+    height: 100%;
   }
+  input {
+    font-family: "宋体";
+    border: 1px solid #ccc;
+    font-size: 12px;
+    width: 168px;
+    height: 22px;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    color: #b6b6b6;
+    background-color: #e7e7e7;
+  }
+  .a2 {
+    font-family: "宋体";
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+  }
+  a {
+    &.a1 {
+      &:link {
+        font-family: "宋体";
+        font-size: 12px;
+        color: #666666;
+        text-decoration: none;
+      }
+      &:visited {
+        font-family: "宋体";
+        font-size: 12px;
+        color: #666666;
+        text-decoration: none;
+      }
+      &:hover {
+        font-family: "宋体";
+        font-size: 12px;
+        color: #6d952f;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+  /*#current*/
+  .router-link-active {
+    color: #6d952f;
+    font-family: "宋体";
+    font-size: 12px;
+  }
+  .wrap {
+    width: 100%;
+    height: 60px;
+    background-color: #f9f9f9;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    opacity: 0.95;
+  }
+  .header {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+    background-color: #f9f9f9;
+    .box2 {
+      width: 100px;
+      height: 60px;
+      float: left;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box3 {
+      width: 80px;
+      height: 60px;
+      float: left;
+      overflow-y: hidden;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      color: #666666;
+    }
+    .box33 {
+      width: 80px;
+      height: auto;
+      float: left;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      color: #666666;
+      background-color: #fbfafa;
+    }
+    .box4 {
+      width: 210px;
+      height: 60px;
+      float: left;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      color: #666666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box5 {
+      width: 50px;
+      height: 60px;
+      float: left;
+      overflow-y: hidden;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      color: #666666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box55 {
+      width: 100px;
+      height: auto;
+      float: left;
+      font-size: 12px;
+      line-height: 60px;
+      text-align: center;
+      color: #666666;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fbfafa;
+    }
+  }
+
 </style>

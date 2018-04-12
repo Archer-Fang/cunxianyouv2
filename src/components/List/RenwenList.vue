@@ -81,11 +81,11 @@
 
   }
 </script>
-<style scoped>
+<style lang="scss" scoped>
   /* CSS Document */
 
 
-  #wenhuawrapper {
+ /* #wenhuawrapper {
     height: auto;
     width: 1000px;
     margin: 0 auto;
@@ -321,6 +321,220 @@
     background-color: #a5a5a5;
     line-height: 40px;
     text-align: center;
+  }*/
+  #wenhuawrapper {
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .wenhua {
+    height: 178px;
+    width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #d9d9d9;
+    .pic {
+      height: 178px;
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+    }
+    .title {
+      width: 720px;
+      height: 44px;
+      float: left;
+      margin-top: 28px;
+      font-size: 18px;
+      font-family: "Adobe Heiti Std";
+      color: rgb(0, 0, 0);
+      a {
+        &.a2 {
+          &:link {
+            font-size: 18px;
+            font-family: "Adobe Heiti Std";
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+          }
+          &:hover {
+            font-size: 18px;
+            font-family: "Adobe Heiti Std";
+            color: rgb(216, 156, 70);
+            cursor: pointer;
+            text-decoration: none;
+          }
+          &:visited {
+            font-size: 18px;
+            font-family: "Adobe Heiti Std";
+            color: #bdbdbd;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .time {
+      width: 720px;
+      height: 34px;
+      float: left;
+      font-size: 12px;
+      font-family: "Adobe Heiti Std";
+      color: rgb(157, 157, 157);
+    }
+    .content {
+      width: 720px;
+      height: 70px;
+      float: left;
+      line-height: 34px;
+      font-size: 12px;
+      font-family: "Adobe Heiti Std";
+      color: rgb(0, 0, 0);
+    }
+  }
+  #yemiananniu {
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
+    .anniu {
+      height: 40px;
+      float: right;
+      margin-top: 30px;
+      border: 1px solid #a5a5a5;
+    }
+    .anniu_0 {
+      height: 40px;
+      float: left;
+      width: 85px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 85px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_1 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_2 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_3 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_4 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_5 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_6 {
+      height: 40px;
+      float: left;
+      width: 30px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #a5a5a5;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 30px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+        border-right: 1px solid #a5a5a5;
+      }
+    }
+    .anniu_7 {
+      height: 40px;
+      float: left;
+      width: 85px;
+      line-height: 40px;
+      text-align: center;
+      &:hover {
+        height: 40px;
+        float: left;
+        width: 85px;
+        background-color: #a5a5a5;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
   }
 
 

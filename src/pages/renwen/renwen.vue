@@ -162,6 +162,6 @@
 
   }
 </script>
-<style scoped="">
+<style lang="scss" scoped="">
 
 </style>

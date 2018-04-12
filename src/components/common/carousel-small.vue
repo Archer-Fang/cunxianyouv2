@@ -215,17 +215,75 @@
   }
 </script>
 
-<style scoped="">
-   .card1{height:300px;width:200px;float:left;background-color:white;margin-left:18px;margin-bottom:10px;box-shadow: 0 0 15px 2px #f1f1f1;}
-   .card1 .honglan{height:25px;width:200px;float:left;}
-   .card1 .shangpinming{height:45px;width:200px;float:left;color:#3d3d3d;text-align:center;line-height:45px;font-size:17px;font-family:宋体;font-weight:bold;}
-   .card1 .imgShow{width: 200px;height:164px;float: left;}
-   .card1 .imgShow img{width: 200px;height:135px;}
-   .card1 .daohang{height:25px;width:200px;float:left;}
-   .card1 .daohang .wrap{height:25px;width:45px;margin:0 auto;}
-   .card1 .daohang .wrap .box1{height:25px;width:15px;float:left;}
-   .card1 .daohang .wrap .box2{height:25px;width:15px;float:left;}
-   .card1 .daohang .wrap .box3{height:25px;width:15px;float:left;}
-   .card1 .jiage{height:40px;width:200px;float:left;color:#e9cc46;text-align:center;line-height:40px;font-size:15px;}
+<style  lang="scss" scoped="">
+  .card1 {
+    height: 300px;
+    width: 200px;
+    float: left;
+    background-color: white;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 2px #f1f1f1;
+    .honglan {
+      height: 25px;
+      width: 200px;
+      float: left;
+    }
+    .shangpinming {
+      height: 45px;
+      width: 200px;
+      float: left;
+      color: #3d3d3d;
+      text-align: center;
+      line-height: 45px;
+      font-size: 17px;
+      font-family: 宋体;
+      font-weight: bold;
+    }
+    .imgShow {
+      width: 200px;
+      height: 164px;
+      float: left;
+      img {
+        width: 200px;
+        height: 135px;
+      }
+    }
+    .daohang {
+      height: 25px;
+      width: 200px;
+      float: left;
+      .wrap {
+        height: 25px;
+        width: 45px;
+        margin: 0 auto;
+        .box1 {
+          height: 25px;
+          width: 15px;
+          float: left;
+        }
+        .box2 {
+          height: 25px;
+          width: 15px;
+          float: left;
+        }
+        .box3 {
+          height: 25px;
+          width: 15px;
+          float: left;
+        }
+      }
+    }
+    .jiage {
+      height: 40px;
+      width: 200px;
+      float: left;
+      color: #e9cc46;
+      text-align: center;
+      line-height: 40px;
+      font-size: 15px;
+    }
+  }
+
 </style>
 

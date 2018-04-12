@@ -132,7 +132,7 @@
 
   }
 </script>
-<style scoped="">
+<style lang="scss" scoped="">
 /*
   @import url("../../assets/css/swiper-3.4.2.min.css");
 */
@@ -140,19 +140,9 @@
   /* CSS Document */
 
 
-  .swiper-container {
-    width: 100%;
-    height: 300px;
-    padding: 50px;
-  }
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
 
-  #tuijian{	width:1000px;height:430px;margin:0 auto;	}
+
+/*  #tuijian{	width:1000px;height:430px;margin:0 auto;	}
   #tuijian .box1{width:240px;height:430px;float:left;}
   #tuijian .box2{width:240px;height:215px;float:left;}
   #tuijian .box3{width:520px;height:215px;float:left;}
@@ -404,28 +394,902 @@
     background-color: #818dbe;
     border-color: #818dbe;
   }
-#chakanreping{width:1024px;height:510px;margin:0 auto;}
+#chakanreping{width:1024px;height:510px;margin:0 auto;}*/
+
+#tuijian {
+  width: 1000px;
+  height: 430px;
+  margin: 0 auto;
+  .box1 {
+    width: 240px;
+    height: 430px;
+    float: left;
+  }
+  .box2 {
+    width: 240px;
+    height: 215px;
+    float: left;
+  }
+  .box3 {
+    width: 520px;
+    height: 215px;
+    float: left;
+  }
+  .box4 {
+    width: 475px;
+    height: 215px;
+    float: left;
+  }
+  .box5 {
+    width: 285px;
+    height: 215px;
+    float: left;
+  }
+}
+#rexiao {
+  width: 1000px;
+  margin: 0 auto;
+  height: 847px;
+  background-color: #e9e9e9;
+  .title {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    .container1 {
+      margin: 0 auto;
+      height: 55px;
+      width: 245px;
+      padding-top: 15px;
+    }
+    .box1 {
+      width: 35px;
+      height: 55px;
+      float: left;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .box2 {
+      width: 175px;
+      height: 55px;
+      float: left;
+      font-size: 24px;
+      font-family: 宋体;
+      font-weight: bold;
+      color: #3a3a3a;
+      text-align: center;
+      line-height: 55px;
+    }
+    .box3 {
+      width: 35px;
+      height: 55px;
+      float: left;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .subtitle {
+    height: 45px;
+    width: 1000px;
+    color: #3a3a3a;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    font-family: 宋体;
+    font-weight: bold;
+  }
+  .content {
+    height: 630px;
+    width: 654px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    .card1 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      background-color: white;
+      margin-left: 18px;
+      margin-bottom: 10px;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+    .card2 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      margin-left: 18px;
+      margin-right: 18px;
+      background-color: white;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+    .card3 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      background-color: white;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+    .card4 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      margin-top: 10px;
+      background-color: white;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+    .card5 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      margin-left: 18px;
+      margin-right: 18px;
+      margin-top: 10px;
+      background-color: white;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+    .card6 {
+      height: 300px;
+      width: 200px;
+      float: left;
+      margin-top: 10px;
+      background-color: white;
+      .honglan {
+        height: 25px;
+        width: 200px;
+        float: left;
+      }
+      .shangpinming {
+        height: 45px;
+        width: 200px;
+        float: left;
+        color: #3d3d3d;
+        text-align: center;
+        line-height: 45px;
+        font-size: 17px;
+        font-family: 宋体;
+        font-weight: bold;
+      }
+      .neirong {
+        height: 165px;
+        width: 200px;
+        float: left;
+        img {
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+      }
+      .daohang {
+        height: 25px;
+        width: 200px;
+        float: left;
+        .wrap {
+          height: 25px;
+          width: 45px;
+          margin: 0 auto;
+          .box1 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box2 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+          .box3 {
+            height: 25px;
+            width: 15px;
+            float: left;
+          }
+        }
+      }
+      .jiage {
+        height: 40px;
+        width: 200px;
+        float: left;
+        color: #e9cc46;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+  }
+  .lookformore {
+    height: 65px;
+    width: 1000px;
+    padding-top: 4.5px;
+    padding-left: 445px;
+    img {
+      margin-top: 14.5px;
+      margin-left: 433px;
+    }
+  }
+}
+#wulong {
+  width: 1000px;
+  margin: 0 auto;
+  height: 445px;
+  .box1 {
+    width: 135px;
+    height: 445px;
+    float: left;
+    text-align: center;
+    color: #5a5a5a;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: 隶书;
+  }
+  .box2 {
+    width: 65px;
+    height: 445px;
+    float: left;
+    text-align: center;
+    color: #707070;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .box2_1 {
+    width: 50px;
+    height: 445px;
+    float: left;
+    text-align: center;
+    color: #707070;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .box3 {
+    width: 470px;
+    height: 445px;
+    float: left;
+    .kongbai {
+      width: 470px;
+      height: 70px;
+      float: left;
+    }
+    .tupian {
+      width: 470px;
+      height: 300px;
+      float: left;
+    }
+    .mingzi {
+      width: 470px;
+      height: 40px;
+      float: left;
+      text-align: center;
+      color: #8f2127;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+  .box4 {
+    width: 280px;
+    height: 85px;
+    float: left;
+  }
+  .box5 {
+    width: 280px;
+    height: 85px;
+    float: left;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 36px;
+  }
+  .box6 {
+    width: 280px;
+    height: 75px;
+    float: left;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 38px;
+    line-height: 75px;
+    position: relative;
+  }
+  .box7 {
+    width: 280px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 48px;
+  }
+  .box8 {
+    width: 280px;
+    height: 75px;
+    float: left;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 36px;
+    line-height: 75px;
+  }
+  .box9 {
+    width: 280px;
+    height: 65px;
+    float: left;
+  }
+}
+#gushi {
+  width: 1000px;
+  height: 620px;
+  margin: 0 auto;
+  background-color: #e9e9e9;
+  .wrap {
+    width: 630px;
+    height: 620px;
+    margin: 0 auto;
+    .title1 {
+      width: 630px;
+      height: 50px;
+      padding-top: 5px;
+      line-height: 50px;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-size: 24px;
+      font-family: 宋体;
+    }
+    .subtitle {
+      width: 630px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #6b6b6b;
+      font-size: 15px;
+      font-family: 宋体;
+    }
+    .cards {
+      width: 630px;
+      height: 420px;
+      padding-top: 20px;
+    }
+    .card1 {
+      width: 315px;
+      height: 210px;
+      float: left;
+    }
+    .card2 {
+      width: 315px;
+      height: 210px;
+      float: left;
+      background-color: white;
+      .biaoti {
+        width: 315px;
+        height: 25px;
+        margin-top: 25px;
+        float: left;
+        color: #a0b512;
+        text-align: center;
+        font-size: 14px;
+        font-family: 宋体;
+        line-height: 25px;
+        font-weight: bold;
+      }
+      .fubiaoti {
+        width: 315px;
+        height: 30px;
+        float: left;
+        color: black;
+        text-align: center;
+        font-size: 17px;
+        font-family: 隶书;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      .neirong {
+        width: 315px;
+        height: 65px;
+        float: left;
+        color: grey;
+        text-align: center;
+        font-size: 12px;
+        font-family: 宋体;
+        line-height: 25px;
+      }
+      .anniu {
+        width: 315px;
+        height: 45px;
+        margin-bottom: 20px;
+        float: left;
+        img {
+          margin-top: 10px;
+          margin-left: 123px;
+        }
+      }
+    }
+    .card3 {
+      width: 315px;
+      height: 210px;
+      float: left;
+      background-color: white;
+      .biaoti {
+        width: 315px;
+        height: 25px;
+        margin-top: 25px;
+        float: left;
+        color: #8a6452;
+        text-align: center;
+        font-size: 14px;
+        font-family: 宋体;
+        line-height: 25px;
+        font-weight: bold;
+      }
+      .fubiaoti {
+        width: 315px;
+        height: 30px;
+        float: left;
+        color: black;
+        text-align: center;
+        font-size: 17px;
+        font-family: 隶书;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      .neirong {
+        width: 315px;
+        height: 65px;
+        float: left;
+        color: grey;
+        text-align: center;
+        font-size: 11px;
+        font-family: 宋体;
+        line-height: 15px;
+      }
+      .anniu {
+        width: 315px;
+        height: 45px;
+        margin-bottom: 20px;
+        float: left;
+        img {
+          margin-top: 20px;
+          margin-left: 123px;
+        }
+      }
+    }
+    .card4 {
+      width: 315px;
+      height: 210px;
+      float: left;
+    }
+  }
+}
+#jingyu {
+  height: 210px;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 0px;
+  padding-top: 15px;
+  background-color: #e9e9e9;
+  .logo {
+    height: 50px;
+    width: 1000px;
+    position: relative;
+  }
+  .title {
+    height: 50px;
+    width: 960px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-family: 楷体;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .content {
+    height: 50px;
+    width: 960px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 23px;
+    color: #9e9e9e;
+    font-family: 楷体;
+  }
+  .sumup {
+    height: 30px;
+    width: 960px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: grey;
+    font-family: 楷体;
+  }
+}
+#footer {
+  height: 140px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #949494;
+  font-family: 宋体;
+  line-height: 140px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-light {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  width: 137px;
+  height: 40px;
+}
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-group-sm>.btn, .btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.2;
+  border-radius: 3px;
+}
+.btn-info2 {
+  color: #fff;
+  background-color: #bd8cff;
+  border-color: #bd8cff;
+}
+.btn-info3 {
+  color: #fff;
+  background-color: #3d7d57;
+  border-color: #3d7d57;
+}
+.btn-info4 {
+  color: #fff;
+  background-color: #ff958c;
+  border-color: #ff958c;
+}
+.btn-info5 {
+  color: #fff;
+  background-color: #90a772;
+  border-color: #90a772;
+}
+.btn-info6 {
+  color: #fff;
+  background-color: #818dbe;
+  border-color: #818dbe;
+}
+#chakanreping {
+  width: 1024px;
+  height: 510px;
+  margin: 0 auto;
+}
 
 
 
 
 
 
-/*
-#remendiqu .content .card2{height:360px;width:200px;float:left;margin-left:18px;margin-right:18px;background-color:white;}
-#remendiqu .content .card2 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
-#remendiqu .content .card2 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
-
-
-
-#remendiqu .content .card3{height:360px;width:200px;float:left;background-color:white;margin-right:18px;}
-#remendiqu .content .card3 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
-#remendiqu .content .card3 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
-
-#remendiqu .content .card4{height:360px;width:200px;float:left;background-color:white;}
-#remendiqu .content .card4 .pic{height:290px;width:200px;float:left;    border-radius: 10px;}
-#remendiqu .content .card4 .wenzi{height:70px;width:200px;float:left;font-size:24px;color:#535353;text-align:center;line-height:70px;}
-*/
 
 
 </style>

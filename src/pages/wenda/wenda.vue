@@ -103,6 +103,7 @@
 
       return{
         name:'fang',
+        input21:'',
 
       }
     },
@@ -129,12 +130,11 @@
   }
 </script>
 
-<style scoped="" >
-
+<style lang="scss" scoped="">
 /*
   @import "../../assets/css/txt.wav.css";
 */
-.btn-default {
+/*.btn-default {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
@@ -183,8 +183,86 @@
 
   .form-control{
     width: 200px;
-/*
+!*
     height:28px;
-*/
+*!
+  }*/
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
   }
+}
+.renwencontainer {
+  height: auto;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.content {
+  height: auto;
+  width: 968px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.wangyou {
+  height: 77px;
+  width: 984px;
+  line-height: 77px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 36px;
+  color: #a0a0a0;
+}
+.fenge {
+  width: 984px;
+  height: 36px;
+  margin: 0 auto;
+  .fengexianleft {
+    width: 200px;
+    height: 36px;
+    margin-left: 170px;
+    float: left;
+  }
+  .fengexianright {
+    width: 200px;
+    height: 36px;
+    margin-right: 170px;
+    float: left;
+  }
+  .notice {
+    width: 244px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    float: left;
+    color: #413e3e;
+    font-size: 20px;
+  }
+}
+.searchplace {
+  width: 984px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  input {
+    text-align: center;
+  }
+}
+.blank {
+  height: 20px;
+  width: 984px;
+  margin: 0 auto;
+}
+.form-control {
+  width: 200px;
+}
+
 </style>
