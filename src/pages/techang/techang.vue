@@ -40,8 +40,9 @@
 
         </div>
 
-        <div class="lookformore" style="padding-left: 20px;">
-          <a href="/front/goods"><img src="/static/images/浏览更多按钮.png" style="     margin-top: 0px; "></a>
+        <div class="lookformore"  style="width: 100px;margin:0 auto">
+          <div>
+            <a href="/front/goods"><el-button>浏览更多</el-button></a></div>
         </div>
      </div>
       <div id="wulong">

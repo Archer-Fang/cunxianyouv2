@@ -7,10 +7,10 @@
 -->
     <RenwenList :NewsList="DONE_NEWS_LIST_ROOT"></RenwenList>
     <div style="margin:0 auto;width:1000px;">
-      <button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" class="btn-light btn" style="margin-left:400px;margin-top:40px;">更多</button>
-      <button @click="backToTop" v-show="BackToTopIsShow&& !DONE_LOADING_ONE && !DONE_LOADING_TWO" class="btn btn-light" style="margin-left:30px;margin-top:40px;">
+      <el-button v-show="!DONE_LOADING_ONE && !DONE_LOADING_TWO" @click="LoadMoreNews()" type="primary" round style="margin-left:400px;margin-top:40px;">更多</el-button>
+      <el-button @click="backToTop" v-show="BackToTopIsShow&& !DONE_LOADING_ONE && !DONE_LOADING_TWO" class="primary" round style="margin-left:30px;margin-top:40px;">
         回到顶部
-      </button>
+      </el-button>
       <LoadingOne v-show="DONE_LOADING_ONE"></LoadingOne>
 
     </div>>

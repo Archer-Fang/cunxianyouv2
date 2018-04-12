@@ -255,7 +255,7 @@
   .contentshow1{width:984px;height:886px;margin:0 auto;}
   .contentshow1 .img1{margin-left:43px;width:271px;height:282px;float:left;margin-bottom:20px;}
 
-  .contentshow1 .img1 .container{width:237px;height:250px;margin-top:16px;margin-bottom:16px;margin-right:17px;margin-left:17px;box-shadow: 0px 0px 16px 1px #F5F5F5;padding:0px;
+  .contentshow1 .img1 .container{width:237px;height:280px;margin-top:16px;margin-bottom:16px;margin-right:17px;margin-left:17px;box-shadow: 0px 0px 16px 1px #F5F5F5;padding:0px;
   }
   .contentshow1 .img1 .box1{width:237px;height:178px;}
   .contentshow1 .img1 .left{width:50px;height:72px;float:left;display: flex;justify-content: center;align-items: center;}

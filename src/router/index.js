@@ -15,6 +15,7 @@ import wenda from '@/pages/wenda/wenda'
 
 
 
+
 Vue.use(Router)
 
 const router= new Router({
@@ -57,6 +58,7 @@ const router= new Router({
       name: 'wenda',
       component: wenda,
     },
+
     /*{
       path: '/test',
       name: 'test',
@@ -73,7 +75,7 @@ router.beforeEach((to, from, next) => {
     }
     else {
       console.log("store.state.data.Login:"+store.state.data.Login)
-
+      alert("请先登录");
       next({
         path: '/login',
 /*

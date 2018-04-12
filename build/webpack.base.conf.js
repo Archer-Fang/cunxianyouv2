@@ -71,9 +71,9 @@ module.exports = {
         },
 
       },
-      {
+      /*{
         test: /bootstrap[\/\\]dist[\/\\]js[\/\\]umd[\/\\]/, loader: 'imports-loader?jQuery=jquery'
-      },
+      },*/
 
     ]
   },
@@ -93,25 +93,7 @@ module.exports = {
   plugins: [
 
     new webpack.ProvidePlugin({
-      $:"jquery",
 
-      jQuery:"jquery",
-
-      "windows.jQuery":"jquery",
-      Tether: "tether",
-      "window.Tether": "tether",
-      Popper: ['popper.js', 'default'],
-      Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
-      Button: "exports-loader?Button!bootstrap/js/dist/button",
-      Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
-      Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
-      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
-
-      Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
-      Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
-      Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
-      Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
-      Util: "exports-loader?Util!bootstrap/js/dist/util",
 
     })
 

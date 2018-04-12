@@ -19,14 +19,16 @@
         <router-link to="/renwen" class="a2">人文</router-link><br/>
 
       </section>
-      <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
-       <!-- <a href="/front/fengguang" class="a1">风光</a><br>
+    <!--  <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
+       &lt;!&ndash; <a href="/front/fengguang" class="a1">风光</a><br>
         <a href="/front/spring" class="a1">春</a><br>
         <a href="/front/summer" class="a1">夏</a><br>
         <a href="/front/autumn" class="a1">秋</a><br>
-        <a href="/front/winter" class="a1">冬</a><br>-->
+        <a href="/front/winter" class="a1">冬</a><br>&ndash;&gt;
+        <router-link to="/fengguang" class="a2">风光</router-link><br/>
 
-      </section>
+
+      </section>-->
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
         <!--<a href="/front/techang" class="a1">特产</a><br>
         <a href="/front/goods" class="a1">特产陈列</a><br>-->
@@ -52,25 +54,29 @@
          <!-- <a href="/front/goodscollection" class="a1">个人中心</a><br>
           <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
           <a href="/front/housecollection" class="a1">我的商品收藏</a><br>-->
-        </section>
-        <section class="box5" style="width:150px">
-          <div  style="color:#6d952f">欢迎你！{{Login}}</div>
+          <router-link to="/wenda" class="a2">个人中心</router-link><br/>
+
+          <router-link to="/wenda" class="a2">预订订单</router-link><br/>
+
+          <router-link to="/wenda" class="a2">我的商品收藏</router-link><br/>
 
         </section>
         <section class="box5" style="width:150px">
-          <button type="button" class="btn btn-light btn-sm">
+          <div  style="color:#6d952f">欢迎你！{{name}}</div>
+
+        </section>
+        <section class="box5" style="width:150px">
+          <el-button type="button" size="mini" round>
 
             <span @click="loginOut">退出登录</span><!---->
-          </button>
+          </el-button>
 
         </section>
 
       </section>
       <section v-else>
         <section class="box5" style="width:150px">
-          <button type="button" class="btn btn-light ">
-            <router-link to="/login" >登录</router-link>
-          </button>
+            <router-link to="/login" class="a2">登录</router-link>
 
         </section>
       </section>
@@ -82,15 +88,11 @@
 <script>
 
 import {mapState, mapActions} from 'vuex'
-/*
-  引入bootstap
-*/
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+
   export default {
   data(){
     return{
-
+      name:'fang'
     }
   },
   mounted(){

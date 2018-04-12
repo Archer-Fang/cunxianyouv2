@@ -159,7 +159,7 @@
   #tuijian .box4{width:475px;height:215px;float:left;}
   #tuijian .box5{width:285px;height:215px;float:left;}
 
-  #rexiao{width:1000px;margin:0 auto;height:827px;background-color:#e9e9e9;}
+  #rexiao{width:1000px;margin:0 auto;height:847px;background-color:#e9e9e9;}
   #rexiao .title{width:1000px;height:70px;margin:0 auto;}
   #rexiao .title .container1{margin:0 auto;height:55px;width:245px;padding-top: 15px;}
   #rexiao .title .box1{width:35px;height:55px;float:left;position: relative;}

@@ -73,7 +73,7 @@
     line-height: 23px;
     color: #9e9e9e;
     font-family: 楷体;
-    background-color: #e9e9e9;padding-left:150px;padding-right:150px;word-wrap: break-word;
+    background-color: #e9e9e9;word-wrap: break-word;
     word-break: normal;
   }
 

@@ -26,7 +26,7 @@
 <!--
            <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
 -->
-             <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
+             <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
           <!-- </a>-->
          </div>
 
@@ -48,7 +48,7 @@
            <!--
                       <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
            -->
-           <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
+           <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
            <!-- </a>-->
          </div>
 
@@ -70,7 +70,7 @@
            <!--
                       <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
            -->
-           <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
+           <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
            <!-- </a>-->
          </div>
 
@@ -92,30 +92,7 @@
            <!--
                       <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
            -->
-           <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
-           <!-- </a>-->
-         </div>
-
-       </div>
-
-       <div class="card1" style="margin-bottom:10px;">
-         <div class="pic" style="background:url(/static/images/%E5%9B%BE%E7%89%871.png);">
-           <div class="honglan">
-           </div>
-           <div class="blank"></div>
-           <div class="bantouming">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hotel_name</div>
-         </div>
-
-
-         <div class="content1">
-           <div class="module line-clamp"><p>hotel_describe</p></div>
-         </div>
-         <!--<div class="button">{{button}}</div>-->
-         <div class="button">
-           <!--
-                      <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
-           -->
-           <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
+           <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
            <!-- </a>-->
          </div>
 
@@ -138,7 +115,30 @@
            <!--
                       <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
            -->
-           <button type="button" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</button>
+           <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
+           <!-- </a>-->
+         </div>
+
+       </div>
+
+       <div class="card1" style="margin-bottom:10px;">
+         <div class="pic" style="background:url(/static/images/%E5%9B%BE%E7%89%871.png);">
+           <div class="honglan">
+           </div>
+           <div class="blank"></div>
+           <div class="bantouming">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hotel_name</div>
+         </div>
+
+
+         <div class="content1">
+           <div class="module line-clamp"><p>hotel_describe</p></div>
+         </div>
+         <!--<div class="button">{{button}}</div>-->
+         <div class="button">
+           <!--
+                      <a href="/front/hotelDetail?hotelDetailId={{hotel_detail_id}}">
+           -->
+           <el-button type="button" size="small" class="btn btn-info btn-sm"> 住宿详情&nbsp;&gt;</el-button>
            <!-- </a>-->
          </div>
 
@@ -146,9 +146,9 @@
 
      </div>
      <div class="lookformore">
-       <button type="button"
+       <el-button type="button"
                class="btn btn-default">浏览更多&nbsp;&gt;
-       </button>
+       </el-button>
      </div>
 
    </div>
@@ -185,7 +185,7 @@
     background-color: #ccc;
 
   }
-  #rexiao{width:1024px;margin:0 auto;height:807px;background-color:#e9e9e9;}
+  #rexiao{width:1024px;margin:0 auto;height:837px;background-color:#e9e9e9;}
   #rexiao .title1{width:1024px;height:55px;margin:0 auto;}
   #rexiao .title1 .container1{margin:0 auto;height:55px;width:245px;}
   #rexiao .title1 .box1{width:35px;height:55px;float:left;position: relative;}

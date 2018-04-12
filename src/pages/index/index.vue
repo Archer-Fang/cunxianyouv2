@@ -173,15 +173,15 @@
 <style scoped="">
   .page4{
     width: 100%;
-    height: 494px;
+    height: 544px;
     margin:0 auto;
 
   }
   .mainone{
     background:url(/static/images/%E5%8D%97%E6%B5%94%20%E7%85%A7%E7%89%87.png);
-    background-size: 1000px 494px;;
+    background-size: 1000px 544px;;
     background-repeat:no-repeat;
-    height: 494px;
+    height: 544px;
     width: 1000px;
     margin:0 auto;
 
@@ -219,11 +219,14 @@
   }
   .mainone .left1:hover{
     width:1000px;
+    padding-right: 0px;
+    padding-left: 0px;
+
   }
 
   .mainone .right{
 
-    height: 494px;
+    height: 544px;
     width: 610px;
     float: left;
 
@@ -248,16 +251,16 @@
   }
   .page5{
     width: 100%;
-    height: 494px;
+    height: 544px;
     margin:0 auto;
     background-color: white;
   }
   .maintwo{
     background:url(/static/images/%E6%9D%A8%E5%AE%B6%E5%A0%82%E6%9D%91%20%E7%85%A7%E7%89%87.png);
-    background-size: 1000px 494px;;
+    background-size: 1000px 544px;;
     background-repeat:no-repeat;
 
-    height:494px;
+    height:544px;
     width:1000px;
     margin:0 auto;
 
@@ -284,7 +287,8 @@
 
   .maintwo .right2:hover{
 
-
+    padding-right: 0px;
+    padding-left: 0px;
     width:1000px;
 
   }
@@ -306,17 +310,17 @@
   }
   .page6{
     width: 100%;
-    height: 494px;
+    height: 544px;
     margin:0 auto;
     background-color: white;
   }
   .mainthree{
 
     background:url(/static/images/%E6%B1%9F%E5%8D%97%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%83%8C%E6%99%AF.png);
-    background-size: 1000px 494px;;
+    background-size: 1000px 544px;;
     background-repeat:no-repeat;
 
-    height:494px;
+    height:544px;
     width:1000px;
     margin:0 auto;
 
@@ -333,13 +337,14 @@
     padding-right:17px;
   }
   .mainthree .left3:hover{
-
+    padding-right: 0px;
+    padding-left: 0px;
     width:1000px;
 
   }
   .mainthree .right{
 
-    height:494px;
+    height:544px;
     width:610px;
     float:left;
 

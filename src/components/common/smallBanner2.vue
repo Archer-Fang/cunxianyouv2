@@ -68,11 +68,7 @@
  </template>
 
 <script>
-  /*
-    引入bootstap
-  */
-  import 'bootstrap/dist/css/bootstrap.min.css'
-  import 'bootstrap/dist/js/bootstrap.min.js'
+
     export default {
     	data(){
             return{

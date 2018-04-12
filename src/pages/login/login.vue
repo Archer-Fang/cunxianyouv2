@@ -60,11 +60,7 @@
   import footer from "@/components/footer/footer"
 
 
-  /*
-    引入bootstap
-  */
-  import 'bootstrap/dist/css/bootstrap.min.css'
-  import 'bootstrap/dist/js/bootstrap.min.js'
+
 
   import {
     mapGetters,mapActions,mapMutations
