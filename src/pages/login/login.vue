@@ -2,6 +2,7 @@
   <div>
 
     <section id="wrap">
+
       <section id="content">
         <section id="left">
           <section id="pic1"><!--<img src="./static/images/logo.png">--></section>
@@ -33,6 +34,10 @@
           </section>
           <section id="btn" ><input type="submit" name="btn"  id="login" @click="login" value="登录"  v-bind:class="[rightPhoneNumber?right_phone_number:wrong_phone_number]"></section>
           <section id="register"><a href="register">注册</a></section>
+<!--
+          <section  ><button  @click="test" >test</button></section>
+-->
+
           <section id="p">登录<h4 style="color:#737373">账号</h4>，一切的<h4 style="color:#737373">美好</h4>不用远离</section>
         </section>
 <!--
@@ -115,6 +120,16 @@
       ...mapMutations([
         'TOGGLE_USERINFO'
       ]),
+      test(){
+
+        axios.get('/api3/hello').then(res=>console.log("res.data:"+res.data))
+          .catch(err => console.log(err))
+        /*axios.post('/api2/v1/captchas',{})
+          .then(res => {
+            console.log("success");
+          }).catch(err => console.log(err))*/
+
+      },
       //是否显示密码
       changePasswordType(){
         this.showPassword = !this.showPassword;

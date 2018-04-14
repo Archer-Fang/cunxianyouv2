@@ -11,7 +11,17 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      /*          target: 'https://news-at.zhihu.com/api/4',*/
+      /*          target: 'https://news-at.zhihu.com/api/4'
+              target: 'http://api.test.dadang8.com',
+
+      ,*/
+      '/api3': {
+        target: 'http://api.test.dadang8.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api3': '/'
+        }
+      },
 
       '/api2': {
         target: 'http://cangdu.org:8001',
@@ -21,12 +31,14 @@ module.exports = {
         }
       },
         '/api': {
-          target: 'https://news-at.zhihu.com/api/4',
+          target: 'https://news-at.zhihu.com/api/4',//http://api.test.dadang8.com
           changeOrigin: true,
           pathRewrite: {
             '^/api': '/'
           }
-      }
+      },
+
+
     },
 
 

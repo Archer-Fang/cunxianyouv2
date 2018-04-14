@@ -1,6 +1,9 @@
 # cunxianyouv2
 
-> A Vue.js project
+> 基于村先游竞赛项目前端（用户端）部分的vue全家桶重构
+> 项目源码地址（前端（用户端和管理员端）加后台）：https://github.com/Archer-Fang/cunxianyou
+> 项目视频演示网站（好像打不开了啊QAQ）：http://dmtds.zjnu.edu.cn/zpShow.aspx?id=2117&jch=16
+> 技术栈：vue全家桶（vue vuex vue-router...）+vue-cli（webpack3，scss加载器，等等）+axios（基于promise的http库）+element(UI框架)+scss（简化css写法）+npm
 
 ## Build Setup
 

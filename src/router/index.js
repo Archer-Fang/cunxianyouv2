@@ -9,6 +9,13 @@ import renwen from '@/pages/renwen/renwen'
 import techang from '@/pages/techang/techang'
 import lvyou from '@/pages/lvyou/lvyou'
 import wenda from '@/pages/wenda/wenda'
+import video from '@/pages/index/children/video'
+import techangchenlie from '@/pages/techang/children/techangchenlie'
+import zhusuchenlie from '@/pages/lvyou/children/zhusuchenlie'
+import jiaotongchenlie from '@/pages/lvyou/children/jiaotongchenlie'
+import personCenter from '@/pages/personCenter/personCenter'
+import order from '@/pages/personCenter/children/order'
+import collection from '@/pages/personCenter/children/collection'
 
 
 
@@ -57,6 +64,41 @@ const router= new Router({
       path: '/wenda',
       name: 'wenda',
       component: wenda,
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component: video,
+    },
+    {
+      path: '/techangchenlie',
+      name: 'techangchenlie',
+      component: techangchenlie,
+    },
+    {
+      path: '/jiaotongchenlie',
+      name: 'jiaotongchenlie',
+      component: jiaotongchenlie,
+    },
+    {
+      path: '/zhusuchenlie',
+      name: 'zhusuchenlie',
+      component: zhusuchenlie,
+    },
+    {
+      path: '/personCenter',
+      name: 'personCenter',
+      component: personCenter,
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: order,
+    },
+    {
+      path: '/collection',
+      name: 'collection',
+      component: collection,
     },
 
     /*{
