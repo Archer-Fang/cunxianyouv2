@@ -1,55 +1,57 @@
 <template>
   <div>
+<structure>
+  <section id="wrap">
 
-    <section id="wrap">
+    <section id="content">
+      <section id="left">
+        <section id="pic1"><!--<img src="./static/images/logo.png">--></section>
+        <section id="welcome">欢迎来到村先游</section>
 
-      <section id="content">
-        <section id="left">
-          <section id="pic1"><!--<img src="./static/images/logo.png">--></section>
-          <section id="welcome">欢迎来到村先游</section>
+        <section id="test" >
+          <!--<div v-show="DONE_NEWS_LATEST.top_stories">
 
-          <section id="test" >
-            <!--<div v-show="DONE_NEWS_LATEST.top_stories">
-
-            </div>-->
-           <!-- <button type="button" class="btn btn-light btn-lg">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-            </button>-->
-          </section>
-          <section id="meili">美丽乡村,第一步</section>
-          <section id="account"><input type="text" name="account" id="telephone"placeholder="手机号" v-model="phoneNumber"></section>
-          <section id="password">
-            <input v-if="!showPassword" type="password" name="password" id="mima" placeholder="密码"  v-model="password">
-            <input v-else type="text" placeholder="密码"  v-model="password">
-            <button  v-if="!showPassword" @click="changePasswordType" class="passwordControl">显示<br/>密码</button>
-            <button  v-else @click="changePasswordType" class="passwordControl">隐藏<br/>密码</button>
-
-
-          </section>
-          <section id="captchaCode">
-            <input type="text" placeholder="验证码" maxlength="4" v-model="captcha">
-            <section class="img_change_img">
-              <img v-show="DONE_CAPTCHA.status" :src="DONE_CAPTCHA.code" @click="getCaptchaCode">
-            </section>
-          </section>
-          <section id="btn" ><input type="submit" name="btn"  id="login" @click="login" value="登录"  v-bind:class="[rightPhoneNumber?right_phone_number:wrong_phone_number]"></section>
-          <section id="register"><a href="register">注册</a></section>
-<!--
-          <section  ><button  @click="test" >test</button></section>
--->
-
-          <section id="p">登录<h4 style="color:#737373">账号</h4>，一切的<h4 style="color:#737373">美好</h4>不用远离</section>
+          </div>-->
+          <!-- <button type="button" class="btn btn-light btn-lg">
+             <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+           </button>-->
         </section>
-<!--
-        <button type="button" class="btn btn-primary">（首选项）Primary</button>
--->
+        <section id="meili">美丽乡村,第一步</section>
+        <section id="account"><input type="text" name="account" id="telephone"placeholder="手机号" v-model="phoneNumber"></section>
+        <section id="password">
+          <input v-if="!showPassword" type="password" name="password" id="mima" placeholder="密码"  v-model="password">
+          <input v-else type="text" placeholder="密码"  v-model="password">
+          <button  v-if="!showPassword" @click="changePasswordType" class="passwordControl">显示<br/>密码</button>
+          <button  v-else @click="changePasswordType" class="passwordControl">隐藏<br/>密码</button>
 
-        <section id="right"><img src="/static/images/809.jpg"></section>
 
-        <alert-tip v-if="showAlert" :showHide="showAlert" @closeTip="closeTip" :alertText="alertText"></alert-tip>
+        </section>
+        <section id="captchaCode">
+          <input type="text" placeholder="验证码" maxlength="4" v-model="captcha">
+          <section class="img_change_img">
+            <img v-show="DONE_CAPTCHA.status" :src="DONE_CAPTCHA.code" @click="getCaptchaCode">
+          </section>
+        </section>
+        <section id="btn" ><input type="submit" name="btn"  id="login" @click="login" value="登录"  v-bind:class="[rightPhoneNumber?right_phone_number:wrong_phone_number]"></section>
+        <section id="register"><a href="register">注册</a></section>
+        <!--
+                  <section  ><button  @click="test" >test</button></section>
+        -->
 
+        <section id="p">登录<h4 style="color:#737373">账号</h4>，一切的<h4 style="color:#737373">美好</h4>不用远离</section>
       </section>
+      <!--
+              <button type="button" class="btn btn-primary">（首选项）Primary</button>
+      -->
+
+      <section id="right"><img src="/static/images/809.jpg"></section>
+
+      <alert-tip v-if="showAlert" :showHide="showAlert" @closeTip="closeTip" :alertText="alertText"></alert-tip>
+
     </section>
+  </section>
+
+</structure>
     <!--<v-footer >
     </v-footer>-->
   </div>

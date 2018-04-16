@@ -24,6 +24,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
+import structure from "./structure/stucture.vue"
+  Vue.component('structure',structure)
 
 Vue.config.productionTip = false
 /*Vue.filter("formatDate", function (value) {

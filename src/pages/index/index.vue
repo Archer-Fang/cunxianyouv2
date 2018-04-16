@@ -1,118 +1,121 @@
 <template>
-  <div id="example-2">
-    <v-carousel></v-carousel>
-    <v-small-banner :picShow="DONE_PICSHOW"></v-small-banner>
-    <div class="page4">
-      <div class="mainone">
-        <div class="left1">
-          <font size="36px" color="#010101">南浔</font>
+  <structure>
+    <div id="example-2" >
+      <v-carousel></v-carousel>
+      <v-small-banner :picShow="DONE_PICSHOW"></v-small-banner>
+      <div class="page4">
+        <div class="mainone">
+          <div class="left1">
+            <font size="36px" color="#010101">南浔</font>
 
-          <div class="big">
-            <div class="small"><img src="/static/images/小蓝条.png"></div>
-          </div>
-          <font size="2px" color="#000000">南浔自古以来文化昌盛，经济发达，人才辈出，书香不绝。<br>
-            明代时就有“九里三阁老，十里两尚书”之谚。仅宋，明，<br>
-            清三代， 南浔就出了进士41名。<br>
-            与南浔相距7里远的辑里村是著名的辑里丝的产地，<br>
-            辑里丝曾获1915年巴拿马国际金奖。</font>
-
-          <div class="jinru"><font size="5px"><a href="/front/notice?noticeId=38" class="a2">点击进入</a></font></div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="page5">
-      <div class="maintwo">
-
-        <div class="right2">
-          <font size="36px" color="#010101">杨家堂村</font>
-
-          <div class="big">
-            <div class="small"><img src="/static/images/小黄条.png"></div>
-          </div>
-          <font size="2px" color="#000000">丽水松阳县杨家堂村坐落在一座环形的山凹中，<br>
-            左右两翼山峦环抱村庄，风水布局相当明显。在地无<br>
-            三尺平的杨家堂，20多幢土木架构的清代民居<br>
-            沿着山坡一级级向上延伸，整个村庄上下屋高低落差<br>
-            约2至3米，<br>
-            在视野中展现出一个巨大的建筑立面，<br>
-            是松阳县典型的阶梯式古村落，<br>
-            有金色布达拉宫之称。</font>
-
-          <div class="jinru"><font size="5px"><a  href="/front/notice?noticeId=39" class="a2">点击进入</a></font></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="page6">
-      <div class="mainthree">
-        <div class="left3">
-          <font size="36px" color="#010101">江南第一家</font>
-
-          <div class="big">
-            <div class="small"><img src="/static/images/小黑条.png"></div>
-          </div>
-          <font size="2px" color="#000000">江南第一家位于金华浦江县，它自南宋建炎年间开始，历经<br>
-            宋、元、明三朝十五世，同居共食达330余年，<br>
-            鼎盛时三千多人同吃一“锅”饭，<br>
-            孝义治家名冠天下。这里以其丰富的古代家族<br>
-            文化和明清建筑组合为特色，是“青山田园古镇，<br>
-            小桥流水人家”的真实写照。</font>
-
-          <div class="jinru"><font size="5px"><a href="/front/notice?noticeId=40" class="a2">点击进入</a></font></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="page7">
-      <div class="mainfour">
-        <div class="container1">
-          <div class="left">
-            <div class="box1">
-              <a href="/front/videoDetail?videoDetailId=8"><img src="/static/images/青藏高原照片.png" onmouseover="this.src='/static/images/青藏高原.png'"
-                                                                onmouseout="this.src='/static/images/青藏高原照片.png'"></a>
+            <div class="big">
+              <div class="small"><img src="/static/images/小蓝条.png"></div>
             </div>
+            <font size="2px" color="#000000">南浔自古以来文化昌盛，经济发达，人才辈出，书香不绝。<br>
+              明代时就有“九里三阁老，十里两尚书”之谚。仅宋，明，<br>
+              清三代， 南浔就出了进士41名。<br>
+              与南浔相距7里远的辑里村是著名的辑里丝的产地，<br>
+              辑里丝曾获1915年巴拿马国际金奖。</font>
+
+            <div class="jinru"><font size="5px"><a href="/front/notice?noticeId=38" class="a2">点击进入</a></font></div>
           </div>
-          <div class="right" style="margin-top:-15px;">
-            <div class="top">
-              <div class="box2" style="margin-top:22px">
-                <a href="/front/videoDetail?videoDetailId=2"><img src="/static/images/海南照片.png" onmouseover="this.src='/static/images/海南.png'"
-                                                                  onmouseout="this.src='/static/images/海南照片.png'"></a>
-              </div>
-              <div class="box2" style="margin-top:22px;margin-left:-12px">
-                <a href="/front/videoDetail?videoDetailId=5"><img src="/static/images/阳澄湖照片.png" onmouseover="this.src='/static/images/阳澄湖.png'"
-                                                                  onmouseout="this.src='/static/images/阳澄湖照片.png'"></a>
-              </div>
-              <div class="box2" style="margin-top:22px;margin-left:-12px">
-                <a href="/front/videoDetail?videoDetailId=6"><img src="/static/images/长白山照片.png" onmouseover="this.src='/static/images/长白山.png'"
-                                                                  onmouseout="this.src='/static/images/长白山照片.png'"></a>
+
+        </div>
+      </div>
+
+      <div class="page5">
+        <div class="maintwo">
+
+          <div class="right2">
+            <font size="36px" color="#010101">杨家堂村</font>
+
+            <div class="big">
+              <div class="small"><img src="/static/images/小黄条.png"></div>
+            </div>
+            <font size="2px" color="#000000">丽水松阳县杨家堂村坐落在一座环形的山凹中，<br>
+              左右两翼山峦环抱村庄，风水布局相当明显。在地无<br>
+              三尺平的杨家堂，20多幢土木架构的清代民居<br>
+              沿着山坡一级级向上延伸，整个村庄上下屋高低落差<br>
+              约2至3米，<br>
+              在视野中展现出一个巨大的建筑立面，<br>
+              是松阳县典型的阶梯式古村落，<br>
+              有金色布达拉宫之称。</font>
+
+            <div class="jinru"><font size="5px"><a  href="/front/notice?noticeId=39" class="a2">点击进入</a></font></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page6">
+        <div class="mainthree">
+          <div class="left3">
+            <font size="36px" color="#010101">江南第一家</font>
+
+            <div class="big">
+              <div class="small"><img src="/static/images/小黑条.png"></div>
+            </div>
+            <font size="2px" color="#000000">江南第一家位于金华浦江县，它自南宋建炎年间开始，历经<br>
+              宋、元、明三朝十五世，同居共食达330余年，<br>
+              鼎盛时三千多人同吃一“锅”饭，<br>
+              孝义治家名冠天下。这里以其丰富的古代家族<br>
+              文化和明清建筑组合为特色，是“青山田园古镇，<br>
+              小桥流水人家”的真实写照。</font>
+
+            <div class="jinru"><font size="5px"><a href="/front/notice?noticeId=40" class="a2">点击进入</a></font></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page7">
+        <div class="mainfour">
+          <div class="container1">
+            <div class="left">
+              <div class="box1">
+                <a href="/front/videoDetail?videoDetailId=8"><img src="/static/images/青藏高原照片.png" onmouseover="this.src='/static/images/青藏高原.png'"
+                                                                  onmouseout="this.src='/static/images/青藏高原照片.png'"></a>
               </div>
             </div>
-            <div class="bottom">
-              <div class="box4" style="margin-top:-26px">
-                <a href="/front/videoDetail?videoDetailId=4"><img src="/static/images/龙虎山照片.png" onmouseover="this.src='/static/images/龙虎山.png'"
-                                                                  onmouseout="this.src='/static/images/龙虎山照片.png'"></a>
+            <div class="right" style="margin-top:-15px;">
+              <div class="top">
+                <div class="box2" style="margin-top:22px">
+                  <a href="/front/videoDetail?videoDetailId=2"><img src="/static/images/海南照片.png" onmouseover="this.src='/static/images/海南.png'"
+                                                                    onmouseout="this.src='/static/images/海南照片.png'"></a>
+                </div>
+                <div class="box2" style="margin-top:22px;margin-left:-12px">
+                  <a href="/front/videoDetail?videoDetailId=5"><img src="/static/images/阳澄湖照片.png" onmouseover="this.src='/static/images/阳澄湖.png'"
+                                                                    onmouseout="this.src='/static/images/阳澄湖照片.png'"></a>
+                </div>
+                <div class="box2" style="margin-top:22px;margin-left:-12px">
+                  <a href="/front/videoDetail?videoDetailId=6"><img src="/static/images/长白山照片.png" onmouseover="this.src='/static/images/长白山.png'"
+                                                                    onmouseout="this.src='/static/images/长白山照片.png'"></a>
+                </div>
               </div>
-              <div class="box4" style="margin-top:-26px;margin-left:-12px">
-                <a href="/front/videoDetail?videoDetailId=3"><img src="/static/images/呼伦贝尔草原照片.png" onmouseover="this.src='/static/images/呼伦贝尔草原.png'"
-                                                                  onmouseout="this.src='/static/images/呼伦贝尔草原照片.png'"></a>
-              </div>
-              <div class="box4" style="margin-top:-26px;margin-left:-12px">
-                <a href="/front/videoDetail?videoDetailId=7"><img src="/static/images/长江照片.png" onmouseover="this.src='/static/images/长江.png'"
-                                                                  onmouseout="this.src='/static/images/长江照片.png'"></a>
+              <div class="bottom">
+                <div class="box4" style="margin-top:-26px">
+                  <a href="/front/videoDetail?videoDetailId=4"><img src="/static/images/龙虎山照片.png" onmouseover="this.src='/static/images/龙虎山.png'"
+                                                                    onmouseout="this.src='/static/images/龙虎山照片.png'"></a>
+                </div>
+                <div class="box4" style="margin-top:-26px;margin-left:-12px">
+                  <a href="/front/videoDetail?videoDetailId=3"><img src="/static/images/呼伦贝尔草原照片.png" onmouseover="this.src='/static/images/呼伦贝尔草原.png'"
+                                                                    onmouseout="this.src='/static/images/呼伦贝尔草原照片.png'"></a>
+                </div>
+                <div class="box4" style="margin-top:-26px;margin-left:-12px">
+                  <a href="/front/videoDetail?videoDetailId=7"><img src="/static/images/长江照片.png" onmouseover="this.src='/static/images/长江.png'"
+                                                                    onmouseout="this.src='/static/images/长江照片.png'"></a>
+                </div>
               </div>
             </div>
           </div>
+          <v-footer >
+          </v-footer>
         </div>
-        <v-footer >
-        </v-footer>
       </div>
+
     </div>
 
-  </div>
+  </structure>
 
 </template>
 

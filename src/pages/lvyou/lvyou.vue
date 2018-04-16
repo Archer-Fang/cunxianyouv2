@@ -1,47 +1,50 @@
 <template>
-  <div >
-    <v-carousel></v-carousel>
-    <v-title :judge="judge" @judgeTrue="judgeTrue" @judgeFalse="judgeFalse"></v-title>
-<!--
-    <div >judge:{{judge}}</div>
--->
-<!--
-    judge为true
--->
-    <div v-if="judge">
-      <v-hotel-rank :rankSubtitle="rankSubtitle1" :rankTitle="rankTitle1"></v-hotel-rank>
+  <structure>
+    <div >
+      <v-carousel></v-carousel>
+      <v-title :judge="judge" @judgeTrue="judgeTrue" @judgeFalse="judgeFalse"></v-title>
+      <!--
+          <div >judge:{{judge}}</div>
+      -->
+      <!--
+          judge为true
+      -->
+      <div v-if="judge">
+        <v-hotel-rank :rankSubtitle="rankSubtitle1" :rankTitle="rankTitle1"></v-hotel-rank>
 
+      </div>
+
+      <!--
+      judge为false
+      -->
+      <div v-else>
+        <v-hotel-rank :rankSubtitle="rankSubtitle2" :rankTitle="rankTitle2"></v-hotel-rank>
+
+      </div>
+
+      <!--
+          显示接下来的内容
+      -->
+      <div id="chakanreping">
+        <v-rural-town></v-rural-town>
+        <v-hot-comment></v-hot-comment>
+      </div>
+      <!--#
+            活动
+      -->
+      <v-activity></v-activity>
+      <!--
+            热门地区
+      -->
+      <v-hot-region></v-hot-region>
+
+
+      <v-jingyu :title="title" :content="content" :sumup="sumup"></v-jingyu>
+      <v-footer :renwen="true">
+      </v-footer>
     </div>
+  </structure>
 
-    <!--
-    judge为false
-    -->
-    <div v-else>
-      <v-hotel-rank :rankSubtitle="rankSubtitle2" :rankTitle="rankTitle2"></v-hotel-rank>
-
-    </div>
-
-<!--
-    显示接下来的内容
--->
-    <div id="chakanreping">
-      <v-rural-town></v-rural-town>
-      <v-hot-comment></v-hot-comment>
-    </div>
-    <!--#
-          活动
-    -->
-    <v-activity></v-activity>
-    <!--
-          热门地区
-    -->
-    <v-hot-region></v-hot-region>
-
-
-    <v-jingyu :title="title" :content="content" :sumup="sumup"></v-jingyu>
-    <v-footer :renwen="true">
-    </v-footer>
-  </div>
 
 </template>
 

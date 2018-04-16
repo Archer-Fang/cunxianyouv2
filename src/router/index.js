@@ -16,6 +16,9 @@ import jiaotongchenlie from '@/pages/lvyou/children/jiaotongchenlie'
 import personCenter from '@/pages/personCenter/personCenter'
 import order from '@/pages/personCenter/children/order'
 import collection from '@/pages/personCenter/children/collection'
+import goodsRank from '@/pages/index/children/goodsRank'
+import growthRank from '@/pages/index/children/growthRank'
+import shopRank from '@/pages/index/children/shopRank'
 
 
 
@@ -35,9 +38,9 @@ const router= new Router({
       path: '/index',
       name: 'index',
       //身份验证
-      meta: {
+      /*meta: {
         requireAuth: true,  // 添加该字段，表示进入这个路由是需要登录的
-      },
+      },*/
       component: index,
     },
     {
@@ -52,13 +55,25 @@ const router= new Router({
     },
     {
       path: '/techang',
-      name: 'techang',
       component: techang,
+
+    },
+    {
+      path: '/techang/techangchenlie',
+      component: techangchenlie
     },
     {
       path: '/lvyou',
       name: 'lvyou',
       component: lvyou,
+    },
+    { path: '/lvyou/jiaotongchenlie',
+      name: 'jiaotongchenlie',
+      component: jiaotongchenlie,
+    },
+    { path: '/lvyou/zhusuchenlie',
+      name: 'zhusuchenlie',
+      component: zhusuchenlie,
     },
     {
       path: '/wenda',
@@ -70,36 +85,38 @@ const router= new Router({
       name: 'video',
       component: video,
     },
-    {
-      path: '/techangchenlie',
-      name: 'techangchenlie',
-      component: techangchenlie,
-    },
-    {
-      path: '/jiaotongchenlie',
-      name: 'jiaotongchenlie',
-      component: jiaotongchenlie,
-    },
-    {
-      path: '/zhusuchenlie',
-      name: 'zhusuchenlie',
-      component: zhusuchenlie,
-    },
+
     {
       path: '/personCenter',
       name: 'personCenter',
       component: personCenter,
     },
     {
-      path: '/order',
+      path: '/personCenter/order',
       name: 'order',
       component: order,
     },
     {
-      path: '/collection',
+      path: '/personCenter/collection',
       name: 'collection',
       component: collection,
     },
+    {
+      path: '/goodsRank',
+      name: 'goodsRank',
+      component: goodsRank,
+    },
+    {
+      path: '/growthRank',
+      name: 'growthRank',
+      component: growthRank,
+    },
+    {
+      path: '/shopRank',
+      name: 'shopRank',
+      component: shopRank,
+    },
+
 
     /*{
       path: '/test',

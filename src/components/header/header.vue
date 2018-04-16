@@ -9,7 +9,10 @@
       <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'">
         <router-link to="/index" class="a2">首页</router-link><br/>
         <router-link to="/video" class="a2">视频</router-link><br/>
-
+      <!--  <router-link to="/goodsRank" class="a2">goodsRank</router-link><br/>
+        <router-link to="/shopRank" class="a2">shopRank</router-link><br/>
+        <router-link to="/growthRank" class="a2">growthRank</router-link><br/>
+-->
         <!--
                 <router-link  :to="{name:'test'}" class="a2" >视频</router-link>&lt;!&ndash;:to="{name:'login'}"&ndash;&gt;
         -->
@@ -35,7 +38,7 @@
         <!--<a href="/front/techang" class="a1">特产</a><br>
         <a href="/front/goods" class="a1">特产陈列</a><br>-->
         <router-link to="/techang" class="a2">特产</router-link><br/>
-        <router-link to="/techangchenlie" class="a2">特产陈列</router-link><br/>
+        <router-link to="/techang/techangchenlie" class="a2">特产陈列</router-link><br/>
 
 
       </section>
@@ -45,8 +48,8 @@
         <a href="/front/hotelList" class="a1">住宿陈列</a>
 -->
         <router-link to="/lvyou" class="a2">旅游</router-link><br/>
-        <router-link to="/jiaotongchenlie" class="a2">交通陈列</router-link><br/>
-        <router-link to="/zhusuchenlie" class="a2">住宿陈列</router-link><br/>
+        <router-link to="/lvyou/jiaotongchenlie" class="a2">交通陈列</router-link><br/>
+        <router-link to="/lvyou/zhusuchenlie" class="a2">住宿陈列</router-link><br/>
 
 
       </section>
@@ -56,16 +59,18 @@
 
       </section>
 
-      <section v-if="Login">
+      <section v-if="Login"><!---->
         <section class="box3" onmouseover="this.className='box33'" onmouseout="this.className='box3'" style="margin-left:40px;">
          <!-- <a href="/front/goodscollection" class="a1">个人中心</a><br>
           <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
           <a href="/front/housecollection" class="a1">我的商品收藏</a><br>-->
           <router-link to="/personCenter" class="a2">个人中心</router-link><br/>
 
-          <router-link to="/order" class="a2">预订订单</router-link><br/>
+          <router-link to="/personCenter/order" class="a2">预订订单</router-link><br/>
 
-          <router-link to="/collection" class="a2">我的商品收藏</router-link><br/>
+<!--
+          <router-link to="/personCenter/collection" class="a2">我的商品收藏</router-link><br/>
+-->
 
         </section>
         <section class="box5" style="width:150px">
@@ -81,7 +86,7 @@
         </section>
 
       </section>
-      <section v-else>
+      <section v-else><!---->
         <section class="box5" style="width:150px">
             <router-link to="/login" class="a2">登录</router-link>
 

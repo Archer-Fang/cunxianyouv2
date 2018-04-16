@@ -19,7 +19,6 @@
 
 <style>
   .set{
-    margin-top: 60px;
     height:520px;
   }
   .el-carousel__item h3 {

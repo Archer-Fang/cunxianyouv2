@@ -1,12 +1,7 @@
 <template>
-  <div >
-    <structure>
+  <div style="margin-top: 60px;">
 
-      <v-footer >
-      </v-footer>
-    </structure>
-
-
+    <slot>父组件还未分发内容到该子组件（必须分发内容！）</slot>
   </div>
 
 </template>

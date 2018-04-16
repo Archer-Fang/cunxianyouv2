@@ -1,31 +1,32 @@
 <template>
-  <div >
-    <v-carousel></v-carousel>
-    <div class="renwencontainer">
-      <div class="content">
-        <div class="wangyou">
-          网友&村民<!--<div class="testTxtWav" >test</div>-->
-        </div>
-        <div class="fenge">
-          <div class="fengexianleft">
-            <img src="/static/images/分割线.png"/>
+  <structure>
+    <div >
+      <v-carousel></v-carousel>
+      <div class="renwencontainer">
+        <div class="content">
+          <div class="wangyou">
+            网友&村民<!--<div class="testTxtWav" >test</div>-->
           </div>
-          <div class="txtwav flip notice ">
-            想问的，你都可以问
+          <div class="fenge">
+            <div class="fengexianleft">
+              <img src="/static/images/分割线.png"/>
+            </div>
+            <div class="txtwav flip notice ">
+              想问的，你都可以问
+            </div>
+            <div class="fengexianright">
+              <img src="/static/images/分割线.png"/>
+            </div>
           </div>
-          <div class="fengexianright">
-            <img src="/static/images/分割线.png"/>
+          <div class="searchplace">
+            <el-input
+              placeholder="请输入内容"
+              v-model="input21" class="form-control">           <!-- prefix-icon="el-icon-search"-->
+
+            </el-input> <img src="/static/images/Search.png" style="margin-left:14px"/>
+
+
           </div>
-        </div>
-        <div class="searchplace">
-          <el-input
-            placeholder="请输入内容"
-            v-model="input21" class="form-control">           <!-- prefix-icon="el-icon-search"-->
-
-          </el-input> <img src="/static/images/Search.png" style="margin-left:14px"/>
-
-
-        </div>
 
           <el-row :gutter="0" style="margin-top: 30px;">
 
@@ -53,7 +54,7 @@
           </el-row>
 
 
-        <v-content-show></v-content-show>
+          <v-content-show></v-content-show>
 
 
 
@@ -64,27 +65,29 @@
 
 
 
-        <div class="blank" style="height: 50px;display: flex; justify-content: center; align-items: center;margin-top: 60px;">
-          <el-button type="button"  style="font-size:14px; color:#8b8b8b;box-shadow: 0 0 15px 2px #F5F5F5;">&nbsp;&nbsp;&nbsp;&nbsp;更新&nbsp;&nbsp;
-            <img src="/static/images/刷新.png " ></el-button>
+          <div class="blank" style="height: 50px;display: flex; justify-content: center; align-items: center;margin-top: 60px;">
+            <el-button type="button"  style="font-size:14px; color:#8b8b8b;box-shadow: 0 0 15px 2px #F5F5F5;">&nbsp;&nbsp;&nbsp;&nbsp;更新&nbsp;&nbsp;
+              <img src="/static/images/刷新.png " ></el-button>
+          </div>
+          <div class="blank">
+          </div>
+          <div class="blank">
+          </div>
+
+          <v-footer :renwen="true">
+          </v-footer>
+          <div class="blank">
+          </div>
+          <div class="blank">
+          </div>
         </div>
-        <div class="blank">
-        </div>
-        <div class="blank">
-        </div>
 
-        <v-footer :renwen="true">
-        </v-footer>
-        <div class="blank">
-        </div>
-        <div class="blank">
-        </div>
       </div>
 
+
     </div>
+  </structure>
 
-
-  </div>
 
 </template>
 

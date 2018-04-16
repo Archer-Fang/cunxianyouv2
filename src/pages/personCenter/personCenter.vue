@@ -1,8 +1,11 @@
 <template>
   <div >
+    <structure>
 
     <v-footer >
     </v-footer>
+      </structure>
+
   </div>
 
 </template>
