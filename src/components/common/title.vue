@@ -1,6 +1,6 @@
  <template>
-   <div class="gongnenglanwrap">
-     <div id="gongnenglan">
+   <div class="gongnenglanwrap" style="background-color: #f1f1f1">
+     <div id="gongnenglan" style="background-color: #f1f1f1">
        <div class="box2 zhushuimg" id="zhushuimg" style="margin-left:140px;" @click="judgeTrue"><img src="/static/images/lvyouzhushu3.png" style="width:20px;height:20px"> &nbsp;<span class="" :class="{a22:!judge,a2:judge}">住 宿</span></div>
        <div class="box3 jiaotongimg" id="jiaotongimg" @click="judgeFalse">
          <img src="/static/images/lvyoujiaotong2.png" style="width:20px;height:20px"> &nbsp;<span  :class="{a3:!judge,a33:judge}">交 通 </span>
