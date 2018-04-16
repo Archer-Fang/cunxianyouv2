@@ -64,13 +64,11 @@
          <!-- <a href="/front/goodscollection" class="a1">个人中心</a><br>
           <a href="/front/houseorder" class="a1">预订订单</a><br><a href="/front/collection" class="a1">我的问题收藏</a><br>
           <a href="/front/housecollection" class="a1">我的商品收藏</a><br>-->
-          <router-link to="/personCenter" class="a2">个人中心</router-link><br/>
+          <router-link to="/personCenter/order" class="a2">个人中心</router-link><br/>
 
           <router-link to="/personCenter/order" class="a2">预订订单</router-link><br/>
 
-<!--
           <router-link to="/personCenter/collection" class="a2">我的商品收藏</router-link><br/>
--->
 
         </section>
         <section class="box5" style="width:150px">

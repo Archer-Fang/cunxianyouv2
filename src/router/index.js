@@ -87,9 +87,9 @@ const router= new Router({
     },
 
     {
-      path: '/personCenter',
+      path: '/personCenter/order',
       name: 'personCenter',
-      component: personCenter,
+      component: order,
     },
     {
       path: '/personCenter/order',
