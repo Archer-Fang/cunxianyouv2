@@ -2,7 +2,6 @@
 
 > 基于村先游竞赛项目前端（用户端）部分的vue全家桶重构<br/>
 > 项目源码地址（前端（用户端和管理员端）加后台）：https://github.com/Archer-Fang/cunxianyou<br/>
-> 项目视频演示网站（好像打不开了啊QAQ）：http://dmtds.zjnu.edu.cn/zpShow.aspx?id=2117&jch=16<br/>
 > 技术栈：vue全家桶（vue vuex vue-router...）+vue-cli（webpack3，scss加载器，等等）+axios（基于promise的http库）+element(UI框架)+scss（简化css写法）+npm+bootstrap<br/>
 > 项目说明:项目用户端还有商品详情页和人文详情页，不过这个项目我给它的定位是入门到精通的vue-cli练手项目，13个页面+做实际项目的时候做的自适应页面（pages/index/children/rank.vue 3个）和其中抽取出来的页面应该足够了，该有的也都有了。<br/>
 ## Build Setup
